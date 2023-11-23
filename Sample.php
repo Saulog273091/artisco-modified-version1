@@ -1,3 +1,8 @@
+<?php 
+include("connect.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,11 +68,37 @@
 </div>
 
 <!-- fourth child -->
-<div class="row">
+<div class="row px-1">
     <div class=" col-md-12">
         <!-- products -->
         <div class="row">
-            <div class="col-md-3 mb-3">
+          <!-- fetching products -->
+          <?php 
+          
+          $select_query = "SELECT * FROM `products` order by rand()";
+          $result_query = mysqli_query($conn, $select_query); 
+          //$row = mysqli_fetch_assoc($result_query);
+          //echo $row['productName'];
+          while($row = mysqli_fetch_assoc($result_query)) {
+            $prod_Id = $row["productId"];
+            $product_id = $row['productName'];
+            $product_price = $row['price'];
+            $product_Image = $row['productImage'];
+            echo "<div class='col-md-3 mb-3'>
+            <div class='card'>
+  <img src='./products/$product_Image' class='card-img-top' alt='$product_id'>
+  <div class='card-body'>
+    <h5 class='card-title'>$product_id</h5>
+    <p class='card-text'>Price: ₱$product_price</p>
+    <a href='Sample.php?add_to_cart=$prod_Id' class='btn btn-info'>Add to Cart</a>
+    <a href='#' class='btn btn-secondary'>View More</a>
+  </div>
+</div>
+
+            </div>";
+          }
+          ?>
+            <!-- <div class="col-md-3 mb-3">
             <div class="card">
   <img src="./public/digitalimage@2x.png" class="card-img-top" alt="...">
   <div class="card-body">
@@ -77,77 +108,8 @@
     <a href="#" class="btn btn-secondary">View More</a>
   </div>
 </div>
-            </div>
-            <div class="col-md-3 mb-3">
-            <div class="card" >
-  <img src="./public/image4@2x.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-info">Add to Cart</a>
-    <a href="#" class="btn btn-secondary">View More</a>
-  </div>
-</div>
-            </div>
-            <div class="col-md-3 mb-3">
-            <div class="card" >
-  <img src="./public/image6@2x.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-info">Add to Cart</a>
-    <a href="#" class="btn btn-secondary">View More</a>
-  </div>
-</div>
-            </div>
-            <div class="col-md-3 mb-3">
-            <div class="card" >
-  <img src="./public/image7@2x.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-info">Add to Cart</a>
-    <a href="#" class="btn btn-secondary">View More</a>
-  </div>
-</div>
-            </div>
-            <div class="col-md-3 mb-3">
-            <div class="card" >
-  <img src="./public/image7@2x.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-info">Add to Cart</a>
-    <a href="#" class="btn btn-secondary">View More</a>
-  </div>
-</div>
-
-            </div>
-            <div class="col-md-3 mb-3">
-            <div class="card" >
-  <img src="./public/image7@2x.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-info">Add to Cart</a>
-    <a href="#" class="btn btn-secondary">View More</a>
-  </div>
-  
-        </div>
-        
-    </div>
-    <div class="col-md-3 mb-3">
-            <div class="card" >
-  <img src="./public/image7@2x.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-info">Add to Cart</a>
-    <a href="#" class="btn btn-secondary">View More</a>
-  </div>
-</div>
-
-</div> 
+            </div>-->
+            
 <!-- last child -->
      <div class="lowerarea6 bg-body-tertiary p-3 text-center" >
         <div class="lowerframe6"></div>
