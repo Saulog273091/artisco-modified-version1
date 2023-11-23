@@ -1,0 +1,595 @@
+.lowerframe2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-100);
+}
+.artistico-all-rights1 {
+  position: absolute;
+  top: 41.94%;
+  left: 39.86%;
+}
+.artistico7,
+.artistico8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.artistico7 {
+  height: 46.77%;
+  width: 13.82%;
+  top: 26.61%;
+  right: 70.83%;
+  bottom: 26.61%;
+  left: 15.35%;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-shrikhand);
+}
+.lowerarea2 {
+  position: absolute;
+  top: 5314px;
+  left: 0;
+  width: 1440px;
+  height: 124px;
+  font-size: var(--font-size-base);
+}
+.accounticon1,
+.carticon1 {
+  position: absolute;
+  height: 0.76%;
+  width: 4.13%;
+  top: 0.07%;
+  right: 16.71%;
+  bottom: 99.17%;
+  left: 79.16%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.accounticon1 {
+  height: 0.84%;
+  top: 0.04%;
+  right: 7.62%;
+  bottom: 99.12%;
+  left: 88.25%;
+}
+.searchbar-item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gainsboro-100);
+}
+.searchicon1 {
+  position: absolute;
+  height: 88.24%;
+  width: 5.86%;
+  top: 5.88%;
+  right: 1.57%;
+  bottom: 5.88%;
+  left: 92.57%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.searchbar1 {
+  position: absolute;
+  height: 0.95%;
+  width: 62.17%;
+  top: 0;
+  right: 23.6%;
+  bottom: 99.05%;
+  left: 14.23%;
+}
+.artistico9 {
+  position: absolute;
+  top: 0;
+  left: -56px;
+  width: 199px;
+  height: 58px;
+}
+.humburgerbtn-icon1 {
+  position: absolute;
+  top: 3px;
+  left: 1060px;
+  width: 47px;
+  height: 44px;
+  object-fit: cover;
+}
+.upperframe2 {
+  position: absolute;
+  top: 36px;
+  left: 186px;
+  width: 1089px;
+  height: 5369px;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-shrikhand);
+}
+.product101,
+.product11,
+.product21,
+.product31,
+.product41,
+.product51,
+.product61,
+.product71,
+.product81,
+.product91,
+.pruduct11 {
+  position: absolute;
+  height: 17.1%;
+  width: 48.62%;
+  top: 81.48%;
+  right: 50.54%;
+  bottom: 1.42%;
+  left: 0.84%;
+  border-radius: var(--br-17xl);
+  background-color: var(--color-gainsboro-100);
+  cursor: pointer;
+}
+.product101,
+.product21,
+.product31,
+.product41,
+.product51,
+.product61,
+.product71,
+.product81,
+.product91,
+.pruduct11 {
+  height: 13.33%;
+  top: 86.67%;
+  right: 0;
+  bottom: 0;
+  left: 51.38%;
+}
+.product21,
+.product31,
+.product41,
+.product51,
+.product61,
+.product71,
+.product81,
+.product91,
+.pruduct11 {
+  height: 16.32%;
+  top: 64.47%;
+  right: 51.38%;
+  bottom: 19.2%;
+  left: 0;
+}
+.product21,
+.product31,
+.product41,
+.product51,
+.product61,
+.product71,
+.product81,
+.pruduct11 {
+  height: 20.28%;
+  top: 65.66%;
+  right: 0;
+  bottom: 14.06%;
+  left: 51.38%;
+}
+.product21,
+.product31,
+.product41,
+.product51,
+.product61,
+.product71,
+.pruduct11 {
+  height: 15.36%;
+  top: 48.35%;
+  right: 51.38%;
+  bottom: 36.28%;
+  left: 0;
+}
+.product21,
+.product31,
+.product41,
+.product51,
+.product61,
+.pruduct11 {
+  height: 20.26%;
+  top: 44.72%;
+  right: 0;
+  bottom: 35.03%;
+  left: 51.38%;
+}
+.product21,
+.product31,
+.product41,
+.product51,
+.pruduct11 {
+  height: 15.36%;
+  top: 32.24%;
+  right: 51.38%;
+  bottom: 52.4%;
+  left: 0;
+}
+.product21,
+.product31,
+.product41,
+.pruduct11 {
+  height: 20.35%;
+  top: 23.66%;
+  right: 0;
+  bottom: 55.99%;
+  left: 51.38%;
+}
+.product21,
+.product31,
+.pruduct11 {
+  height: 15.36%;
+  top: 16.12%;
+  right: 51.38%;
+  bottom: 68.52%;
+  left: 0;
+}
+.product21,
+.pruduct11 {
+  height: 20.26%;
+  top: 2.79%;
+  right: 0;
+  bottom: 76.95%;
+  left: 51.38%;
+}
+.pruduct11 {
+  height: 15.36%;
+  top: 0;
+  right: 51.38%;
+  bottom: 84.64%;
+  left: 0;
+}
+.digitalframe1,
+.productarea1 {
+  position: absolute;
+  top: 908px;
+  left: 130px;
+  width: 1193px;
+  height: 4374px;
+}
+.digitalframe1 {
+  height: 98.11%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 1.89%;
+  left: 0;
+  border-radius: var(--br-17xl);
+  background-color: var(--color-white);
+}
+.digital-art1 {
+  position: absolute;
+  top: 41.98%;
+  left: 45.86%;
+}
+.see-more3 {
+  font-weight: 300;
+}
+.see-more-container3 {
+  position: relative;
+}
+.digitalbtn1 {
+  position: absolute;
+  height: 18.4%;
+  width: 28.45%;
+  top: 67.45%;
+  right: 26.21%;
+  bottom: 14.15%;
+  left: 45.34%;
+  border-radius: var(--br-base);
+  background-color: var(--color-silver);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-8xs) var(--padding-mid);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+}
+.digitalimage-icon {
+  position: absolute;
+  height: 94.34%;
+  width: 29.83%;
+  top: 5.66%;
+  right: 57.76%;
+  bottom: 0;
+  left: 12.41%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.digitalarts {
+  position: absolute;
+  top: 326px;
+  left: 730px;
+  width: 580px;
+  height: 212px;
+  text-align: right;
+}
+.sculptureframe1 {
+  position: absolute;
+  height: 95.85%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 4.15%;
+  left: 0;
+  border-radius: var(--br-17xl);
+  background-color: var(--color-white);
+}
+.sculpture2,
+.sculpturebtn1 {
+  position: absolute;
+  top: 41.01%;
+  left: 47.41%;
+}
+.sculpturebtn1 {
+  height: 17.97%;
+  width: 28.45%;
+  top: 65.9%;
+  right: 24.14%;
+  bottom: 16.13%;
+  border-radius: var(--br-base);
+  background-color: var(--color-silver);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-8xs) var(--padding-mid);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+}
+.sculptureimage-icon {
+  position: absolute;
+  height: 97.24%;
+  width: 32.93%;
+  top: 2.76%;
+  right: 55.69%;
+  bottom: 0;
+  left: 11.38%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.sculpture1 {
+  position: absolute;
+  top: 326px;
+  left: 130px;
+  width: 580px;
+  height: 217px;
+  text-align: right;
+}
+.commissionedframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-17xl);
+  background-color: var(--color-white);
+}
+.customized-icon {
+  position: absolute;
+  height: 83.65%;
+  width: 27.76%;
+  top: 8.17%;
+  right: 59.83%;
+  bottom: 8.17%;
+  left: 12.41%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.customizebtn {
+  position: absolute;
+  height: 18.75%;
+  width: 28.45%;
+  top: 64.42%;
+  right: 26.21%;
+  bottom: 16.83%;
+  left: 45.34%;
+  border-radius: var(--br-base);
+  background-color: var(--color-silver);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-8xs) var(--padding-mid);
+  box-sizing: border-box;
+}
+.customized-art {
+  position: absolute;
+  top: 40.38%;
+  left: 45.34%;
+  font-size: var(--font-size-13xl);
+  text-align: right;
+}
+.commissionedarts {
+  position: absolute;
+  top: 106px;
+  left: 730px;
+  width: 580px;
+  height: 208px;
+  font-size: var(--font-size-5xl);
+}
+.paintimage-icon,
+.painting2 {
+  position: absolute;
+  top: 40.38%;
+  left: 48.28%;
+}
+.paintimage-icon {
+  height: 84.62%;
+  width: 38.28%;
+  top: 7.69%;
+  right: 55.69%;
+  bottom: 7.69%;
+  left: 6.03%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.paintingbtn1 {
+  position: absolute;
+  height: 18.75%;
+  width: 28.45%;
+  top: 64.42%;
+  right: 24.14%;
+  bottom: 16.83%;
+  left: 47.41%;
+  border-radius: var(--br-base);
+  background-color: var(--color-silver);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-8xs) var(--padding-mid);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+}
+.painting1 {
+  position: absolute;
+  top: 106px;
+  left: 130px;
+  width: 580px;
+  height: 208px;
+  text-align: right;
+}
+.dataminingfrm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-100);
+  width: 1440px;
+  height: 329px;
+}
+.fourthfrm,
+.rdframe,
+.thframe {
+  position: absolute;
+  width: 277px;
+  height: 229px;
+}
+.thframe {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-17xl);
+  background-color: var(--color-dimgray-100);
+}
+.fourthfrm,
+.rdframe {
+  top: 25px;
+  left: 1033px;
+}
+.rdframe {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-17xl);
+  background-color: var(--color-dimgray-100);
+  width: 279px;
+}
+.firstfrm,
+.recommendfrm,
+.secondfrm,
+.thirdfrm {
+  position: absolute;
+  top: 25px;
+  left: 732px;
+  width: 279px;
+  height: 229px;
+}
+.firstfrm,
+.recommendfrm,
+.secondfrm {
+  left: 431px;
+}
+.firstfrm,
+.recommendfrm {
+  left: 130px;
+}
+.recommendfrm {
+  top: 546px;
+  left: 0;
+  width: 1440px;
+  height: 329px;
+}
+.customerlandingpage {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 5438px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.help-support {
+  position: absolute;
+  top: 19px;
+  left: 60px;
+  font-weight: 600;
+}
+.logout-1-icon,
+.supportbtn {
+  position: absolute;
+  top: 158px;
+  left: 43px;
+  width: 236px;
+  height: 48px;
+}
+.logout-1-icon {
+  top: 0;
+  left: 0;
+  width: 48px;
+  object-fit: cover;
+}
+.accbtn,
+.logoutbtn {
+  position: absolute;
+  top: 270px;
+  left: 43px;
+  width: 148px;
+  height: 48px;
+  cursor: pointer;
+}
+.accbtn {
+  top: 64px;
+  width: 158px;
+}
+.humburgerfrm {
+  position: relative;
+  background-color: var(--color-gainsboro-100);
+  width: 401px;
+  height: 676px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

@@ -1,0 +1,211 @@
+.addproduct {
+    position: absolute;
+    bottom: 5%;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.categories {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+
+input[type="radio"]{
+    display:none;
+
+}
+
+label{
+    position: relative;
+    font-size: 15px;
+    border: 2px solid gray;
+    border-radius: 50px;
+    padding: 5px 50px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"]:checked + label{
+    background-color: lightskyblue;
+    color: white;
+}
+.input {
+    display: block;
+    padding: 8px;
+}
+
+.close {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    background: white;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.product-image {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+
+.product-details {
+    font-family: --font-inter;
+    font-size:25px;
+    text-transform:uppercase;
+}
+
+.popup-content {
+    height: 300px;
+    width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.popup {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    position: absolute;
+    top: 3%;
+    left: 10.35%;
+}
+
+.artistico {
+    font-size: var(--font-size-21xl);
+    font-family: var(--font-shrikhand);
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    padding: none;
+}
+
+button:hover {
+    background: dimgray;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+
+.addbtn {
+    position: absolute;
+    text-decoration: none;
+    color:black;
+    border: 2px solid darkgrey;
+    border-radius: 20px;
+    padding: 5px;
+    width: 3.5cm;
+    cursor: pointer;
+    background-color:gainsboro;
+    font-family: --font-inter;
+    text-transform:uppercase;
+    top: 40%;
+    left: 10%;
+    transition: 0.4s;
+}
+
+.upload-box{
+    font-size: 16px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+    width: 350px;
+    outline: none;
+}
+
+.btnLogout {
+    position: absolute;
+    top: 4%;
+    right: 5.35%;
+    font-size: var(--font-size-5xl);
+    font-family: var(--font-work-sans);
+    border-radius: 20px;
+    transition: 0.4s;
+    border: 2px solid darkgrey;
+    width: 3cm;
+}
+
+.ordersbtn {
+    position: absolute;
+    top: 3%;
+    right: 13.10%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.feedbackbtn {
+    position: absolute;
+    top: 3%;
+    right: 17.10%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.profileHead {
+    position: absolute;
+    top: 12.10%;
+    left: 10.35%;
+}
+
+.sellerProfile {
+    font-size: var(--font-size-21xl);
+    font-family: var(--font-work-sans);
+}
+
+.lowerarea {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 90%;
+    background-color: var(--color-gainsboro-100);
+}
+
+.artistico-all-rights2 {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+}
+
+.titlelower {
+    position: absolute;
+    top: 40%;
+    left: 10.35%;
+}
+
+.frame {
+    position: absolute;
+    height: 70%;
+    width: 45%;
+    right: 5.35%;
+    top: 15%;
+    background-color: var(--color-gainsboro-100);
+    clip-path: inset(0% 0% 0% 0% round 10%);
+}
+
+.storeIcon {
+    border: none;
+    appearance: none;
+    background-color: inherit;
+    position: absolute;
+    top: 20%;
+    left: 10.35%;
+}

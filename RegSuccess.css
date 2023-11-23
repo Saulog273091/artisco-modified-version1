@@ -1,0 +1,94 @@
+.regsuccess-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-56xl);
+  background-color: var(--color-lightgray-100);
+}
+.successfully-registered {
+  position: absolute;
+  height: 29.52%;
+  width: 63.66%;
+  top: 21.43%;
+  left: 22.85%;
+  font-weight: 800;
+  display: inline-block;
+}
+.icon3,
+.tick-icon-30-11 {
+  position: absolute;
+  height: 100%;
+  width: 79.15%;
+  top: 0;
+  right: 20.85%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.tick-icon-30-11 {
+  height: 64.34%;
+  width: 55.07%;
+  top: 33.4%;
+  right: 0;
+  bottom: 2.26%;
+  left: 44.93%;
+}
+.icon2 {
+  position: absolute;
+  height: 63.1%;
+  width: 18.31%;
+  top: 16.67%;
+  right: 69.62%;
+  bottom: 20.24%;
+  left: 12.07%;
+}
+.continuebtn-item {
+  position: absolute;
+  height: 100%;
+  width: 94.64%;
+  top: 0;
+  right: 5.36%;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-12xl-5);
+  background-color: var(--color-dimgray-200);
+}
+.continue1 {
+  position: absolute;
+  height: 69.57%;
+  width: 100%;
+  top: 13.04%;
+  left: 0;
+  font-weight: 800;
+  display: inline-block;
+}
+.continuebtn1 {
+  position: absolute;
+  height: 27.38%;
+  width: 31.61%;
+  top: 51.19%;
+  right: 32.9%;
+  bottom: 21.43%;
+  left: 35.48%;
+  cursor: pointer;
+  color: var(--color-lightgray-100);
+}
+.regsuccess {
+  position: relative;
+  width: 372px;
+  height: 84px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

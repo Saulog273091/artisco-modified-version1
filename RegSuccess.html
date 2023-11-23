@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./RegSuccess.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="regsuccess">
+      <div class="regsuccess-child"></div>
+      <div class="successfully-registered">Successfully Registered</div>
+      <div class="icon2">
+        <img class="icon3" alt="" src="./public/1144760-1@2x.png" />
+
+        <img
+          class="tick-icon-30-11"
+          alt=""
+          src="./public/tickicon30-1@2x.png"
+        />
+      </div>
+      <div class="continuebtn1" id="popupcontinuebtnContainer">
+        <div class="continuebtn-item"></div>
+        <div class="continue1">Continue &gt;</div>
+      </div>
+    </div>
+
+    <script>
+      var popupcontinuebtnContainer = document.getElementById(
+        "popupcontinuebtnContainer"
+      );
+      if (popupcontinuebtnContainer) {
+        popupcontinuebtnContainer.addEventListener("click", function (e) {
+          window.location.href = "./LogIn.html";
+        });
+      }
+      </script>
+  </body>
+</html>

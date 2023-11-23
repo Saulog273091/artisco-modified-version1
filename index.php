@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Artistico</title>
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap"
+    />
+
+    
+  </head>
+  <body>
+    <div class="main-loginregister">
+      <div class="lowerframe">
+        <div class="lowerarea">
+          <div class="lowerarea-child"></div>
+        </div>
+        <div class="all-about-the-container">
+          <p class="all-about-the">
+            <span>All about the</span>
+            <span class="span"> </span>
+          </p>
+          <p class="all-about-the">creativity</p>
+        </div>
+        <img class="socialicons" alt="" src="./public/socialicons@2x.png" />
+
+        <div class="privacy-policy">Privacy Policy</div>
+        <div class="terms-conditions">Terms & Conditions</div>
+      </div>
+      <div class="middleframe" data-scroll-to="middleFrameContainer">
+        <div class="middleframe-child"></div>
+        <img class="image4-icon" alt="" src="./public/image4@2x.png" />
+
+        <div class="about">
+          This is an e-commerce platform for digital arts that will benefit
+          those people who are having trouble finding an environment to showcase
+          their work of art.
+        </div>
+        <div class="labelabout">About</div>
+        <div class="indicator">|</div>
+      </div>
+      <div class="sculptureframe">
+        <div class="sculpturebtn" id="sculpturebtnContainer">
+          <div class="see-more-container">
+            <span class="see-more">See More </span>
+            <b>&gt;</b>
+          </div>
+        </div>
+        <div class="sculpture">Sculpture</div>
+        <img class="image6-icon" alt="" src="./public/image6@2x.png" />
+      </div>
+      <div class="digitalframe">
+        <div class="digitalbtn" id="digitalbtnContainer">
+          <div class="see-more-container">
+            <span class="see-more">See More </span>
+            <b>&gt;</b>
+          </div>
+        </div>
+        <div class="digital-art">Digital Art</div>
+        <img class="image7-icon" alt="" src="./public/image7@2x.png" />
+      </div>
+      <div class="paintingframe">
+        <img class="image8-icon" alt="" src="./public/image8@2x.png" />
+
+        <div class="painting">Painting</div>
+        <div class="paintingbtn" id="paintingbtnContainer">
+          <div class="see-more-container">
+            <span class="see-more">See More </span>
+            <b>&gt;</b>
+          </div>
+        </div>
+      </div>
+      <div class="upperframe">
+        <img
+          class="image1-icon"
+          alt=""
+          src="./public/image1@2x.png"
+          data-scroll-to="image1"
+        />
+
+        <div class="redirectloginregister" id="redirectLoginRegisterContainer">
+          <div class="glowarea"></div>
+          <div class="shop-now">Shop Now</div>
+        </div>
+        <b class="every-canvass-is">Every canvass is treated special</b>
+        <img class="image3-icon" alt="" src="./public/image3@2x.png" />
+
+        <div class="artistico">Artisti.co</div>
+        <img class="image2-icon" alt="" src="./public/image2@2x.png" />
+
+        <div class="artistico1" id="artisticoContainer">
+          <div class="artistico2">Artisti.co</div>
+        </div>
+        <div class="about1" id="aboutContainer">
+          <div class="about2">About</div>
+        </div>
+        <div class="register" id="registerContainer">
+          <div class="about2">Register</div>
+        </div>
+        <div class="log-in" id="logInContainer">
+          <div class="about2">Log In</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="createaccmessageContainer"
+      class="popup-overlay"
+      style="display: none"
+    >
+      <div class="createaccmessage">
+        <div class="createaccmessage-child"></div>
+        <div class="please-create-an">Please Create an Account</div>
+        <div class="createaccmessage-item"></div>
+        <div class="icon">
+          <img class="icon1" alt="" src="./public/1144760-11@2x.png" />
+
+          <img
+            class="tick-icon-30-1"
+            alt=""
+            src="./public/tickicon30-11@2x.png"
+          />
+        </div>
+        <div class="continuebtn" id="popupcontinuebtnContainer">
+          <div class="continuebtn-child"></div>
+          <div class="continue">Continue &gt;</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var popupcontinuebtnContainer = document.getElementById(
+        "popupcontinuebtnContainer"
+      );
+      if (popupcontinuebtnContainer) {
+        popupcontinuebtnContainer.addEventListener("click", function (e) {
+          window.location.href = "/RegisterCustomer.php";
+        });
+      }
+      
+      var sculpturebtnContainer = document.getElementById("sculpturebtnContainer");
+      if (sculpturebtnContainer) {
+        sculpturebtnContainer.addEventListener("click", function () {
+          var popup = document.getElementById("createaccmessageContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var digitalbtnContainer = document.getElementById("digitalbtnContainer");
+      if (digitalbtnContainer) {
+        digitalbtnContainer.addEventListener("click", function () {
+          var popup = document.getElementById("createaccmessageContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var paintingbtnContainer = document.getElementById("paintingbtnContainer");
+      if (paintingbtnContainer) {
+        paintingbtnContainer.addEventListener("click", function () {
+          var popup = document.getElementById("createaccmessageContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var redirectLoginRegisterContainer = document.getElementById(
+        "redirectLoginRegisterContainer"
+      );
+      if (redirectLoginRegisterContainer) {
+        redirectLoginRegisterContainer.addEventListener("click", function () {
+          var popup = document.getElementById("createaccmessageContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      var privacyPolicyText = document.getElementById("privacyPolicyText");
+      if (privacyPolicyText) {
+        privacyPolicyText.addEventListener("click", function () {
+          var popup = document.getElementById("privacyPolicyContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var termsConditions = document.getElementById("termsConditions");
+      if (termsConditions) {
+        termsConditions.addEventListener("click", function () {
+          var popup = document.getElementById("termsAndConditionsContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });}
+      var artisticoContainer = document.getElementById("artisticoContainer");
+      if (artisticoContainer) {
+        artisticoContainer.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='image1']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var aboutContainer = document.getElementById("aboutContainer");
+      if (aboutContainer) {
+        aboutContainer.addEventListener("click", function () {
+          var anchor = document.querySelector(
+            "[data-scroll-to='middleFrameContainer']"
+          );
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var registerContainer = document.getElementById("registerContainer");
+      if (registerContainer) {
+        registerContainer.addEventListener("click", function (e) {
+          window.location.href = "./RegisterCustomer.php";
+        });
+      }
+      
+      var logInContainer = document.getElementById("logInContainer");
+      if (logInContainer) {
+        logInContainer.addEventListener("click", function (e) {
+          window.location.href = "./LogIn.php";
+        });
+      }
+      </script>
+
+      
+  </body>
+</html>

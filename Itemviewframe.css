@@ -1,0 +1,336 @@
+.lowerframe7 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-gainsboro-100);
+  }
+  .artistico-all-rights3 {
+    position: absolute;
+    top: 41.94%;
+    left: 39.86%;
+  }
+  .artistico30,
+  .artistico31 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .artistico30 {
+    height: 46.77%;
+    width: 13.82%;
+    top: 26.61%;
+    right: 70.83%;
+    bottom: 26.61%;
+    left: 15.35%;
+    font-size: var(--font-size-21xl);
+    font-family: var(--font-shrikhand);
+  }
+  .lowerarea7 {
+    position: absolute;
+    top: 5314px;
+    left: 0;
+    width: 1440px;
+    height: 124px;
+    font-size: var(--font-size-base);
+    font-family: var(--font-inter);
+  }
+  .accounticon3,
+  .carticon3 {
+    position: absolute;
+    height: 0.76%;
+    width: 4.13%;
+    top: 0.07%;
+    right: 16.71%;
+    bottom: 99.17%;
+    left: 79.16%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .accounticon3 {
+    height: 0.84%;
+    top: 0.04%;
+    right: 7.62%;
+    bottom: 99.12%;
+    left: 88.25%;
+  }
+  .searchbar-item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--br-xl);
+    background-color: var(--color-gainsboro-100);
+  }
+  .searchicon1 {
+    position: absolute;
+    height: 88.24%;
+    width: 5.86%;
+    top: 5.88%;
+    right: 1.57%;
+    bottom: 5.88%;
+    left: 92.57%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .searchbar1 {
+    position: absolute;
+    height: 0.95%;
+    width: 62.17%;
+    top: 0;
+    right: 23.6%;
+    bottom: 99.05%;
+    left: 14.23%;
+  }
+  .artistico32 {
+    position: absolute;
+    top: 0;
+    left: -56px;
+    width: 199px;
+    height: 58px;
+  }
+  .humburgerbtn-icon1 {
+    position: absolute;
+    top: 3px;
+    left: 1060px;
+    width: 47px;
+    height: 44px;
+    object-fit: cover;
+  }
+  .upperframe5 {
+    position: absolute;
+    top: 36px;
+    left: 186px;
+    width: 1089px;
+    height: 5369px;
+  }
+  .product101,
+  .product21,
+  .product31,
+  .product41,
+  .product51,
+  .product61,
+  .product71,
+  .product81,
+  .product91 {
+    position: absolute;
+    height: 16.32%;
+    width: 48.62%;
+    top: 80.57%;
+    right: 51.38%;
+    bottom: 3.11%;
+    left: 0;
+    border-radius: var(--br-17xl);
+    background-color: var(--color-gainsboro-100);
+  }
+  .product21,
+  .product31,
+  .product41,
+  .product51,
+  .product61,
+  .product71,
+  .product81,
+  .product91 {
+    top: 63.49%;
+    bottom: 20.19%;
+  }
+  .product21,
+  .product31,
+  .product41,
+  .product51,
+  .product61,
+  .product71,
+  .product81 {
+    height: 20.28%;
+    top: 79.31%;
+    right: 0;
+    bottom: 0.41%;
+    left: 51.38%;
+  }
+  .product21,
+  .product31,
+  .product41,
+  .product51,
+  .product61,
+  .product71 {
+    height: 15.36%;
+    top: 47.37%;
+    right: 51.38%;
+    bottom: 37.27%;
+    left: 0;
+  }
+  .product21,
+  .product31,
+  .product41,
+  .product51,
+  .product61 {
+    height: 20.26%;
+    top: 58.37%;
+    right: 0;
+    bottom: 21.38%;
+    left: 51.38%;
+  }
+  .product21,
+  .product31,
+  .product41,
+  .product51 {
+    height: 15.36%;
+    top: 31.25%;
+    right: 51.38%;
+    bottom: 53.38%;
+    left: 0;
+  }
+  .product21,
+  .product31,
+  .product41 {
+    height: 20.35%;
+    top: 37.31%;
+    right: 0;
+    bottom: 42.34%;
+    left: 51.38%;
+  }
+  .product21,
+  .product31 {
+    height: 15.36%;
+    top: 15.13%;
+    right: 51.38%;
+    bottom: 69.5%;
+    left: 0;
+  }
+  .product21 {
+    height: 20.26%;
+    top: 16.44%;
+    right: 0;
+    bottom: 63.31%;
+    left: 51.38%;
+  }
+  .productarea1 {
+    position: absolute;
+    top: 908px;
+    left: 130px;
+    width: 1193px;
+    height: 4374px;
+  }
+  .addtocartbtn-child,
+  .pruduct11 {
+    position: absolute;
+    background-color: var(--color-gainsboro-100);
+  }
+  .pruduct11 {
+    height: 12.36%;
+    width: 82.85%;
+    top: 2%;
+    right: 8.13%;
+    bottom: 85.64%;
+    left: 9.03%;
+    border-radius: var(--br-17xl);
+  }
+  .btn-addtocart {
+    top: 0;
+    left: 0;
+    border-radius: 22px;
+    width: 510px;
+    height: 76px;
+    font-size: 25px;
+  }
+  .add-to-cart,
+  .addtocartbtn {
+    position: absolute;
+    top: 785px;
+    left: 775px;
+  }
+  .addtocartbtn {
+    top: 798px;
+    left: 813px;
+    width: 510px;
+    height: 76px;
+  }
+  .descriptionarea,
+  .descriptionarea-child {
+    position: absolute;
+    width: 1199px;
+    height: 579px;
+  }
+  .descriptionarea-child {
+    top: 0;
+    left: 0;
+    background-color: var(--color-gainsboro-100);
+  }
+  .descriptionarea {
+    top: 896px;
+    left: 133px;
+  }
+  .description {
+    position: absolute;
+    top: 16.92%;
+    left: 11.74%;
+  }
+  .itemviewframe {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 5438px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-21xl);
+    color: var(--color-black);
+    font-family: var(--font-shrikhand);
+  }
+  .help-support {
+    position: absolute;
+    top: 19px;
+    left: 60px;
+    font-weight: 600;
+  }
+  .logout-1-icon,
+  .supportbtn {
+    position: absolute;
+    top: 158px;
+    left: 43px;
+    width: 236px;
+    height: 48px;
+  }
+  .logout-1-icon {
+    top: 0;
+    left: 0;
+    width: 48px;
+    object-fit: cover;
+  }
+  .accbtn,
+  .logoutbtn {
+    position: absolute;
+    top: 270px;
+    left: 43px;
+    width: 148px;
+    height: 48px;
+    cursor: pointer;
+  }
+  .accbtn {
+    top: 64px;
+    width: 158px;
+  }
+  .humburgerfrm {
+    position: relative;
+    background-color: var(--color-gainsboro-100);
+    width: 401px;
+    height: 676px;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  

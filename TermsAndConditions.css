@@ -1,0 +1,71 @@
+.termsandconditions-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-47xl);
+  background-color: var(--color-gainsboro-200);
+}
+.these-terms-and {
+  margin: 0;
+  font-weight: 500;
+}
+.user-eligibility {
+  margin: 0;
+  font-weight: 800;
+}
+.termination {
+  font-weight: 800;
+  font-family: var(--font-inter);
+}
+.we-may-terminate {
+  font-weight: 500;
+}
+.termination-51-we-may-termin {
+  margin: 0;
+}
+.these-terms-and-container {
+  position: absolute;
+  height: 84.26%;
+  width: 92.32%;
+  top: 9.82%;
+  left: 5.41%;
+  display: inline-block;
+}
+.artistico16,
+.artistico17 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.artistico16 {
+  height: 4%;
+  width: 14.32%;
+  top: 1.04%;
+  right: 76.4%;
+  bottom: 94.95%;
+  left: 9.28%;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-shrikhand);
+}
+.termsandconditions1 {
+  position: relative;
+  width: 906px;
+  height: 662px;
+}
+.termsandconditions {
+  position: relative;
+  width: 100%;
+  height: 638px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

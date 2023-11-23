@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./Humburgerfrm.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="humburgerfrm">
+      <div class="supportbtn">
+        <div class="help-support">Help & Support</div>
+        <img
+          class="logout-1-icon"
+          alt=""
+          src="./public/customer-support-1@2x.png"
+        />
+      </div>
+      <div class="logoutbtn" id="popuplogoutbtnContainer">
+        <img class="logout-1-icon" alt="" src="./public/logout-1@2x.png" />
+
+        <div class="help-support">Log out</div>
+      </div>
+      <div class="accbtn" id="popupaccbtnContainer">
+        <img class="logout-1-icon" alt="" src="./public/male-user-1@2x.png" />
+
+        <div class="help-support">Account</div>
+      </div>
+    </div>
+
+    <script>
+      var popuplogoutbtnContainer = document.getElementById(
+        "popuplogoutbtnContainer"
+      );
+      if (popuplogoutbtnContainer) {
+        popuplogoutbtnContainer.addEventListener("click", function (e) {
+            window.location.href = "./index.html";
+        });
+      }
+      
+      var popupaccbtnContainer = document.getElementById("popupaccbtnContainer");
+      if (popupaccbtnContainer) {
+        popupaccbtnContainer.addEventListener("click", function (e) {
+            window.location.href = "./AccountFrame.html";
+        });
+      }
+      </script>
+  </body>
+</html>

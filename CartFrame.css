@@ -1,0 +1,118 @@
+.lowerframe5 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-100);
+}
+.artistico-all-rights1 {
+  position: absolute;
+  top: 41.94%;
+  left: 39.86%;
+}
+.artistico22,
+.artistico23 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.artistico22 {
+  height: 46.77%;
+  width: 13.82%;
+  top: 26.61%;
+  right: 70.83%;
+  bottom: 26.61%;
+  left: 15.35%;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-shrikhand);
+}
+.carticon1,
+.lowerarea5 {
+  position: absolute;
+  top: 1651px;
+  left: 0;
+  width: 1440px;
+  height: 124px;
+}
+.carticon1 {
+  height: 2.35%;
+  width: 3.13%;
+  top: 2.32%;
+  right: 15.07%;
+  bottom: 95.34%;
+  left: 81.81%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.accounticon1,
+.artistico24 {
+  position: absolute;
+  cursor: pointer;
+}
+.accounticon1 {
+  height: 2.61%;
+  width: 3.13%;
+  top: 2.2%;
+  right: 9.03%;
+  bottom: 95.19%;
+  left: 87.85%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.artistico24 {
+  top: 36px;
+  left: 196px;
+  width: 199px;
+  height: 58px;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-shrikhand);
+}
+.cart1,
+.cart2,
+.cart3,
+.cart4,
+.cart5 {
+  position: absolute;
+  top: 1344px;
+  left: 130px;
+  border-radius: var(--br-12xl);
+  background-color: var(--color-gainsboro-100);
+  width: 1180px;
+  height: 272px;
+}
+.cart1,
+.cart2,
+.cart3,
+.cart4 {
+  top: 1037px;
+}
+.cart1,
+.cart2,
+.cart3 {
+  top: 730px;
+}
+.cart1,
+.cart2 {
+  top: 423px;
+}
+.cart1 {
+  top: 116px;
+}
+.cartframe {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1775px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

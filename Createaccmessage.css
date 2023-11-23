@@ -1,0 +1,108 @@
+.createaccmessage-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-56xl);
+  background-color: rgba(218, 213, 210, 0.83);
+}
+.please-create-an {
+  position: absolute;
+  height: 29.57%;
+  width: 86.05%;
+  top: 15.8%;
+  left: 6.96%;
+  font-weight: 800;
+  display: inline-block;
+}
+.createaccmessage-item {
+  position: absolute;
+  height: 87.68%;
+  width: 26.45%;
+  top: 5.22%;
+  right: 71.53%;
+  bottom: 7.1%;
+  left: 2.02%;
+  border-radius: 67px;
+  background-color: var(--color-lightgray-100);
+  display: none;
+}
+.icon1,
+.tick-icon-30-1 {
+  position: absolute;
+  height: 100%;
+  width: 79.21%;
+  top: 0;
+  right: 20.79%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.tick-icon-30-1 {
+  height: 64.23%;
+  width: 55.13%;
+  top: 33.27%;
+  right: 0;
+  bottom: 2.5%;
+  left: 44.87%;
+}
+.icon {
+  position: absolute;
+  height: 75.36%;
+  width: 20.77%;
+  top: 11.45%;
+  right: 72.59%;
+  bottom: 13.19%;
+  left: 6.65%;
+  display: none;
+}
+.continuebtn-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-12xl-5);
+  background-color: var(--color-dimgray-200);
+}
+.continue {
+  position: absolute;
+  height: 70.16%;
+  width: 66.1%;
+  top: 3.66%;
+  left: 17.13%;
+  font-weight: 800;
+  display: inline-block;
+}
+.continuebtn {
+  position: absolute;
+  height: 27.68%;
+  width: 38.47%;
+  top: 55.07%;
+  right: 30.82%;
+  bottom: 17.25%;
+  left: 30.71%;
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--color-lightgray-100);
+}
+.createaccmessage {
+  position: relative;
+  width: 352px;
+  height: 69px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

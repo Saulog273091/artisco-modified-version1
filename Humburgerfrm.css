@@ -1,0 +1,47 @@
+.help-support {
+    position: absolute;
+    top: 19px;
+    left: 60px;
+    font-weight: 600;
+  }
+  .logout-1-icon,
+  .supportbtn {
+    position: absolute;
+    top: 158px;
+    left: 43px;
+    width: 236px;
+    height: 48px;
+  }
+  .logout-1-icon {
+    top: 0;
+    left: 0;
+    width: 48px;
+    object-fit: cover;
+  }
+  .accbtn,
+  .logoutbtn {
+    position: absolute;
+    top: 270px;
+    left: 43px;
+    width: 148px;
+    height: 48px;
+    cursor: pointer;
+  }
+  .accbtn {
+    top: 64px;
+    width: 158px;
+  }
+  .humburgerfrm {
+    position: relative;
+    background-color: var(--color-gainsboro-100);
+    width: 401px;
+    height: 676px;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  
