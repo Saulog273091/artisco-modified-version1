@@ -1,0 +1,186 @@
+.lowerframe5 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-gainsboro-100);
+  }
+  .artistico-all-rights1 {
+    position: absolute;
+    top: 41.94%;
+    left: 39.86%;
+  }
+  .artistico22,
+  .artistico23 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .artistico22 {
+    height: 46.77%;
+    width: 13.82%;
+    top: 26.61%;
+    right: 70.83%;
+    bottom: 26.61%;
+    left: 15.35%;
+    font-size: var(--font-size-21xl);
+    font-family: var(--font-shrikhand);
+  }
+  .lowerarea5 {
+    position: absolute;
+    top: 1651px;
+    left: 0;
+    width: 1440px;
+    height: 124px;
+    font-size: var(--font-size-base);
+  }
+  .accounticon1,
+  .carticon1 {
+    position: absolute;
+    height: 2.35%;
+    width: 3.13%;
+    top: 2.32%;
+    right: 15.07%;
+    bottom: 95.34%;
+    left: 81.81%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .accounticon1 {
+    height: 2.61%;
+    top: 2.2%;
+    right: 9.03%;
+    bottom: 95.19%;
+    left: 87.85%;
+    cursor: pointer;
+  }
+  .artistico24,
+  .payment {
+    position: absolute;
+    font-size: var(--font-size-21xl);
+    font-family: var(--font-shrikhand);
+  }
+  .artistico24 {
+    top: 36px;
+    left: 196px;
+    width: 199px;
+    height: 58px;
+    cursor: pointer;
+  }
+  .payment {
+    top: 144px;
+    left: 142px;
+  }
+  .billing-info1,
+  .choose-payment-method {
+    position: absolute;
+    top: 236px;
+    left: 168px;
+  }
+  .billing-info1 {
+    top: 0;
+    left: 0;
+    font-weight: 800;
+  }
+  .billing-info,
+  .gcash-info {
+    position: absolute;
+    top: 668px;
+    left: 194px;
+    width: 188px;
+    height: 44px;
+    font-size: var(--font-size-17xl);
+  }
+  .gcash-info {
+    left: 730px;
+    width: 197px;
+  }
+  .gcash1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-12xl);
+    background-color: var(--color-gainsboro-100);
+    width: 380px;
+    height: 272px;
+  }
+  .pay-with-gcash {
+    position: absolute;
+    top: 193px;
+    left: 103px;
+  }
+  .gcash-horizontal-full-blue-tra-icon {
+    position: absolute;
+    top: 93px;
+    left: 64px;
+    width: 252px;
+    height: 85px;
+    object-fit: cover;
+  }
+  .gcash {
+    position: absolute;
+    top: 299px;
+    left: 130px;
+    width: 380px;
+    height: 272px;
+    cursor: pointer;
+  }
+  .paypal-1-icon {
+    position: absolute;
+    top: 110px;
+    left: 56px;
+    width: 269px;
+    height: 52px;
+    object-fit: cover;
+  }
+  .pay-with-paypal,
+  .paypal {
+    position: absolute;
+    top: 193px;
+    left: 100px;
+  }
+  .paypal {
+    top: 299px;
+    left: 530px;
+    width: 380px;
+    height: 272px;
+    cursor: pointer;
+  }
+  .pay-in-cash {
+    position: absolute;
+    top: 193px;
+    left: 124px;
+  }
+  .dollar-money-cash-icon-14-1 {
+    position: absolute;
+    top: 73px;
+    left: 130px;
+    width: 120px;
+    height: 115px;
+    object-fit: cover;
+  }
+  .cash {
+    position: absolute;
+    top: 299px;
+    left: 930px;
+    width: 380px;
+    height: 272px;
+    cursor: pointer;
+  }
+  .paymentframe {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 1775px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  
