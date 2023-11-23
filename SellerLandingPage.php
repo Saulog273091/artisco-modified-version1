@@ -1,3 +1,16 @@
+<?php
+session_start();
+include("connect.php");
+
+if(!isset($_SESSION['emailAdd'])){
+    header("location:LogIn.php");
+    die();
+}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html>
     <head>

@@ -1,3 +1,15 @@
+<?php
+session_start();
+include("connect.php");
+
+if(!isset($_SESSION['emailAdd'])){
+    header("location:LogIn.php");
+    die();
+}
+?>
+
+
+
 <?php 
 include("connect.php");
 
@@ -36,7 +48,7 @@ if(isset($_POST["add"])){
 
                 move_uploaded_file($tmpName , 'products/' . $newImageName);
 
-                $sql_query = "INSERT INTO `products` (`productName`, `price`, `category`, `productImage`) VALUES ('$productName', '$price', '$category','$newImageName')";
+                $sql_query = "INSERT INTO `products` (`productId`, `productName`, `price`, `category`, `productImage`) VALUES ('', '$productName', '$price', '$category','$newImageName')";
 
                       if(mysqli_query($conn, $sql_query)){
                           echo "<script> alert ('Product Added Successfully!');  </script>";
@@ -47,11 +59,9 @@ if(isset($_POST["add"])){
             }
       } 
 }
-
-
-
-
 ?>
+
+
 
 
 
