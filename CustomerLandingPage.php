@@ -1,6 +1,7 @@
 <?php
 session_start();
 include("connect.php");
+include("./functions/common_function.php");
 
 if(!isset($_SESSION['emailAdd'])){
     header("location:LogIn.php");
@@ -35,15 +36,19 @@ if(!isset($_SESSION['emailAdd'])){
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap"
->
+    />
+    <!-- bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
 
     <!--<h2>Welcome <?php echo $_SESSION['emailAdd'] ?> </h2><br>-->
 
-    <a href="logout.php">
+    <!--<a href="logout.php">
         <button class="btnLogout" name="logout">Log Out</button>
-        </a> 
+        </a> -->
 
     <div class="customerlandingpage">
       <div class="lowerarea2">
@@ -62,7 +67,7 @@ if(!isset($_SESSION['emailAdd'])){
           <img
         
           class="carticon2"
-          >
+          />
 
       <div class="upperframe2">
         <img
@@ -84,6 +89,7 @@ if(!isset($_SESSION['emailAdd'])){
           <div class="searchbar-item"></div>
           <img class="searchicon1" alt="" src="./public/searchicon@2x.png" />
         </div>
+
         <div class="artistico9">
           <div class="artistico8">Artisti.co</div>
         </div>
@@ -92,38 +98,47 @@ if(!isset($_SESSION['emailAdd'])){
 
 
       <div class="productarea">
-        <div class="product11"></div>
-        <div class="product10"></div>
-        <div class="product9"></div>
-        <div class="product8"></div>
-        <div class="product7"></div>
-        <div class="product6"></div>
-        <div class="product5"></div>
-        <div class="product4"></div>
-        <div class="product3"></div>
-        <div class="product2"></div>
-        <div class="pruduct1"></div>
+        
+        <div class="row px-3">
+    <div class=" col-md-12">
+        <!-- products --> 
+        <div class="row">
+          <!-- fetching products -->
+          <?php 
+          
+          $select_query = "SELECT * FROM `products` order by rand()";
+          $result_query = mysqli_query($conn, $select_query); 
+          //$row = mysqli_fetch_assoc($result_query);
+          //echo $row['productName'];
+          while($row = mysqli_fetch_assoc($result_query)) {
+            $prod_Id = $row["productId"];
+            $product_id = $row['productName'];
+            $product_price = $row['price'];
+            $product_Image = $row['productImage'];
+            echo "<div class='col-md-3 mb-3'>
+            <div class='card'>
+  <img src='./products/$product_Image' class='card-img-top' alt='$product_id'>
+  <div class='card-body'>
+    <h5 class='card-title'>$product_id</h5>
+    <p class='card-text'>Price: ₱$product_price</p>
+    <a href='Sample.php?add_to_cart=$prod_Id' class='btn btn-info'>Add to Cart</a>
+    <a href='#' class='btn btn-secondary'>View More</a>
+  </div>
+</div>
+
+            </div>";
+          }
+          ?> 
+        </div>
+      </div>
+    </div>
 
         <img
           class="humburgerbtn-icon1"
           alt=""
-          src="./public/humburgerbtn@2x.png"
+          src="./public/2.png"
           id="humburgerbtnIcon"
         />
-      </div>
-      <div class="productarea1">
-        <div class="product11" id="product11"></div>
-        <div class="product101" id="product10"></div>
-        <div class="product91" id="product9"></div>
-        <div class="product81" id="product8"></div>
-        <div class="product71" id="product7"></div>
-        <div class="product61" id="product6"></div>
-        <div class="product51" id="product5"></div>
-        <div class="product41" id="product4"></div>
-        <div class="product31" id="product3"></div>
-        <div class="product21" id="product2"></div>
-        <div class="pruduct11" id="pruduct1"></div>
-
       </div>
       <div class="digitalarts">
         <div class="digitalframe1"></div>
@@ -179,6 +194,12 @@ if(!isset($_SESSION['emailAdd'])){
           </div>
         </div>
       </div>
+
+<!-- calling cart function -->
+<?php
+  cart();
+?>
+
       <div class="recommendfrm">
         <div class="dataminingfrm"></div>
         <div class="fourthfrm">
@@ -218,6 +239,7 @@ if(!isset($_SESSION['emailAdd'])){
         </div>
       </div>
     </div>
+    </div>  
 
     <script>
       var popuplogoutbtnContainer = document.getElementById(
@@ -353,5 +375,7 @@ if(!isset($_SESSION['emailAdd'])){
         });
       }
       </script>
+      <!-- bootstrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

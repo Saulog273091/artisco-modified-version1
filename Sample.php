@@ -1,5 +1,6 @@
 <?php 
 include("connect.php");
+include("./functions/common_function.php");
 ?>
 
 
@@ -33,7 +34,7 @@ include("connect.php");
           <a class="nav-link active" aria-current="page" href="/index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i><sup>1</sup></a>
+          <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i><sup><?php cart_item(); ?></sup></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Profile</a>
@@ -47,6 +48,11 @@ include("connect.php");
     </div>
   </div>
 </nav>
+
+<!-- calling cart function -->
+<?php
+  cart();
+?>
 
 <!-- second child -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
@@ -68,14 +74,17 @@ include("connect.php");
 </div>
 
 <!-- fourth child -->
-<div class="row px-1">
+<div class="row px-4">
     <div class=" col-md-12">
         <!-- products -->
         <div class="row">
           <!-- fetching products -->
           <?php 
-          
-          $select_query = "SELECT * FROM `products` order by rand()";
+          getproducts();
+          //getIPAddress();
+          //$ip = getIPAddress();  
+//echo 'User Real IP Address - '.$ip;  
+          /*$select_query = "SELECT * FROM `products` order by rand()";
           $result_query = mysqli_query($conn, $select_query); 
           //$row = mysqli_fetch_assoc($result_query);
           //echo $row['productName'];
@@ -96,7 +105,7 @@ include("connect.php");
 </div>
 
             </div>";
-          }
+          }*/
           ?>
             <!-- <div class="col-md-3 mb-3">
             <div class="card">
