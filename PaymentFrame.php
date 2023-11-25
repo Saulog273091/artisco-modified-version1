@@ -64,12 +64,12 @@
         <img
           class="gcash-horizontal-full-blue-tra-icon"
           alt=""
-          src="./public/gcash-horizontalfullbluetransparent-1@2x.png"
+          src="./public/GCash_Horizontal-Full-Blue-Transparent.png"
         />
       </div>
       <div class="paypal" id="paypalContainer">
         <div class="gcash1"></div>
-        <img class="paypal-1-icon" alt="" src="./public/paypal-1@2x.png" />
+        <img class="paypal-1-icon" alt="" src="./public/PayPal.svg.png" />
 
         <i class="pay-with-paypal">Pay with PayPal</i>
       </div>
@@ -79,7 +79,7 @@
         <img
           class="dollar-money-cash-icon-14-1"
           alt=""
-          src="./public/dollarmoneycashicon14-1@2x.png"
+          src="./public/dollar-money-cash-icon-14.png"
         />
       </div>
     </div>

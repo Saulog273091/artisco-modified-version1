@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     $host = "localhost";
     $username = "root";
     $password = "";
@@ -14,7 +16,6 @@
     if(isset($_POST['save']))
     {
 
-
         $lastName = $_POST['lastName'];
         $firstName = $_POST['firstName'];
         $middleName = $_POST['middleName'];
@@ -27,13 +28,10 @@
         $passWord = $_POST['passWord'];
         $cpassWord = $_POST['cpassWord'];
         $image = $_FILES["image"]['name'];
-
-        
-
+       
         $select = "SELECT * FROM `selle-ver` WHERE emailAdd = '$emailAdd' && passWord = '$passWord' ";    
         $result = mysqli_query($conn, $select);
     
-
         if ($result && mysqli_num_rows($result) > 0 )
         {
             echo "<script> alert ('User Already Exist');  </script>";
@@ -79,15 +77,11 @@
     
                                   }
                           }
-                  } 
-  
-              
+                  }              
             }
-
         }
         mysqli_close($conn);
-    }
-    
+    }   
 ?>
 
 
@@ -379,32 +373,6 @@
           window.location.href = "./LogIn.php";
         });
       }
-      
-      /*var regsellContainer = document.getElementById("regsellContainer");
-      if (regsellContainer) {
-        regsellContainer.addEventListener("click", function () {
-          var popup = document.getElementById("regSuccessContainer");
-          if (!popup) return;
-          var popupStyle = popup.style;
-          if (popupStyle) {
-            popupStyle.display = "flex";
-            popupStyle.zIndex = 100;
-            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
-            popupStyle.alignItems = "center";
-            popupStyle.justifyContent = "center";
-          }
-          popup.setAttribute("closable", "");
-      
-          var onClick =
-            popup.onClick ||
-            function (e) {
-              if (e.target === popup && popup.hasAttribute("closable")) {
-                popupStyle.display = "none";
-              }
-            };
-          popup.addEventListener("click", onClick);
-        });
-      }*/
       
       var customerSliderContainer = document.getElementById(
         "customerSliderContainer"

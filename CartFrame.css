@@ -74,11 +74,7 @@
   font-size: var(--font-size-21xl);
   font-family: var(--font-shrikhand);
 }
-.cart1,
-.cart2,
-.cart3,
-.cart4,
-.cart5 {
+.cart1 {
   position: absolute;
   top: 1344px;
   left: 130px;
@@ -116,7 +112,7 @@
   color: var(--color-black);
   font-family: var(--font-inter);
 }
-.cart_img{
+/*.cart_img{
   width: 50px;
   height: 50px;
-}
+}*/

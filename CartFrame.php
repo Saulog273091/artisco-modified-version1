@@ -70,28 +70,33 @@ include("functions/common_function.php");
       
       <div class="cart1">
         <!-- fourth child table -->
-        <form action="">
+        <form action="CartFrame.php" method="post">
+
       <div class="container">
         <div class="row">
           <table class="table table-bordered text-center">
-            <thead>
-              <tr>
-                <th>Product Name</th>
-                <th>Product Image</th>
-                <th>Total Price</th>
-                <th>Remove</th>
-                
-                
-              </tr>
-            </thead>
+            
             <tbody>
               <!--php code to display dynamic data-->
               <?php 
               global $conn;
               $get_ip_add = getIPAddress();
               $total_price = 0;
+             // $storeName = $_POST['storeName'];
               $cart_query = "SELECT * FROM `cart-details` WHERE `ip_address`='$get_ip_add'";
               $result = mysqli_query($conn, $cart_query); 
+              $result_count = mysqli_num_rows($result);
+              if($result_count>0){
+                echo "<thead>
+                        <tr>
+                          <th></th>
+                          <th>Store Name</th>
+                          <th>Product Name</th>
+                          <th>Product Image</th>
+                          <th>Total Price</th>                                            
+                        </tr>
+                      </thead>";
+              
               while($row=mysqli_fetch_array($result)){
                 $product_id = $row['product_id'];
                 $select_products = "SELECT * FROM `products` WHERE `productId` = '$product_id'";
@@ -106,14 +111,19 @@ include("functions/common_function.php");
                
               ?>
               <tr>
+                <td><input type="checkbox" name="removeitem[]" value="<?php echo $product_id ?>"></td>
+                <td></td>
                 <td><?php echo $product_title ?></td> 
                 <td><img src="./products/<?php echo $product_image ?>" alt="" class="cart_img"></td>
                 <td>₱<?php echo $price_table ?></td>
-                <td><input type="checkbox" name="removeitem[]" value="<?php echo $product_id ?>"></td>
+                
               </tr>
 
               <?php 
+                }
                }
+              }else {
+                echo "<h2 class='text-center' >Your Cart is empty</h2>";
               }
               ?>
 
@@ -121,11 +131,24 @@ include("functions/common_function.php");
           </table>
           <!-- subtotal -->
           <div class="d-flex mb-5">
-            <h4 class="px-3">Subtotal:<strong>₱<?php echo $total_price ?></strong></h4>
-            <a href="CustomerLandingPage.php" ><button class="px-3  border-0">Continue Shopping</button></a>
-            <a href="#" ><button class="px-3 border-0 mx-3">Checkout</button></a>
-            <!--<button class="px-3 border-0 mx-5">Remove</button> -->
-            <input type="submit" value="Remove cart" class="px-3 border-0 mx-5" name="remove_cart">
+            <?php
+
+            $get_ip_add = getIPAddress();
+            // $storeName = $_POST['storeName'];
+            $cart_query = "SELECT * FROM `cart-details` WHERE `ip_address`='$get_ip_add'";
+            $result = mysqli_query($conn, $cart_query); 
+            $result_count = mysqli_num_rows($result);
+            if($result_count>0){
+                echo"<h4 class='px-3'>Subtotal:<strong>₱ $total_price </strong></h4>
+                <a href='CustomerLandingPage.php' class='btn px-3 border-0 m-3'>Continue Shopping</a>
+                <a href='PaymentFrame.php' class='btn px-3 border-0 m-3'>Checkout</a>
+                <!--<button class='px-3 border-0 mx-5'>Remove</button> -->
+                <input type='submit' value='Remove from cart' class='btn px-3 border-0 mx-3' name='remove_cart'>";
+            }else{
+              echo "<a href='CustomerLandingPage.php' class='btn px-3 border-0 m-3'>Continue Shopping</a>";
+            }
+?>
+            
           </div>
         </div>
       </div>
@@ -155,14 +178,14 @@ include("functions/common_function.php");
       var accountIcon = document.getElementById("accountIcon");
       if (accountIcon) {
         accountIcon.addEventListener("click", function (e) {
-          window.location.href = "./AccountFrame.html";
+          window.location.href = "./AccountFrame.php";
         });
       }
       
       var artisticoContainer1 = document.getElementById("artisticoContainer1");
       if (artisticoContainer1) {
         artisticoContainer1.addEventListener("click", function (e) {
-          window.location.href = "./CustomerLandingPage.html";
+          window.location.href = "./CustomerLandingPage.php";
         });
       }
       </script>
