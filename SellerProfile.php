@@ -6,6 +6,11 @@ if(!isset($_SESSION['emailAdd'])){
     header("location:LogIn.php");
     die();
 }
+
+
+// if(isset($_SESSION['storeName'])){
+//     print_r($_SESSION);
+// }
 ?>
 
 
@@ -15,14 +20,16 @@ include("connect.php");
 
 if(isset($_POST["add"])){  
 
+    //print_r($_Se);
     $productName = $_POST['productName'];
     $price = $_POST['price'];
     $category = $_POST['category'];
-    //$emailAdd = $_POST['emailAdd'];
+    $emailAdd = $_SESSION['emailAdd'];
+    //$retrievedstoreName = $_SESSION['storeName'];
 
 
     $productImage = $_FILES["image"]['name'];
-
+    
     if($_FILES["image"]["error"] === 4){
         echo "<script> alert('Image does not exist'); </script>";
     }
@@ -48,7 +55,7 @@ if(isset($_POST["add"])){
 
                 move_uploaded_file($tmpName , 'products/' . $newImageName);
 
-                $sql_query = "INSERT INTO `products` (`productId`, `productName`, `price`, `category`, `productImage`) VALUES ('', '$productName', '$price', '$category','$newImageName')";
+                $sql_query = "INSERT INTO `products` (`productId`, `emailAdd`, `productName`, `price`, `category`, `productImage`) VALUES ('','$emailAdd', '$productName', '$price', '$category','$newImageName')";
 
                       if(mysqli_query($conn, $sql_query)){
                           echo "<script> alert ('Product Added Successfully!');  </script>";
@@ -57,7 +64,7 @@ if(isset($_POST["add"])){
 
                       }
             }
-      } 
+      }
 }
 ?>
 

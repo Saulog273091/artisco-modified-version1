@@ -1,6 +1,6 @@
 <?php
    
-    session_start();
+   session_start();
    
     include("connect.php");
     //$msg="";
@@ -48,17 +48,18 @@
 
 <?php
 
+
 include("connect.php");
 
 if(isset($_POST['submitsell']))
 {
-
+    //print_r($_POST);
 
     $emailAdd = $_POST['emailAdd'];
     $passWord = $_POST['passWord'];
 
     if(!empty($emailAdd) && !empty($passWord)){
-      $query = "SELECT * FROM `selle-ver` WHERE emailAdd = '$emailAdd' LIMIT 1";
+      $query = "SELECT * FROM `selle-ver` WHERE emailAdd = '$emailAdd' && passWord = '$passWord'";
       $result = mysqli_query($conn, $query);
 
 
@@ -68,7 +69,7 @@ if(isset($_POST['submitsell']))
               $user_data = mysqli_fetch_assoc($result);
 
               if($user_data["passWord"] == $passWord){
-                  header("location: SellerLandingPage.html");
+                  header("location: SellerLandingPage.php");
                   die;
 
               }
