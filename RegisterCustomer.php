@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     $host = "localhost";
     $username = "root";
     $password = "";
@@ -27,12 +29,8 @@
 
         $select = "SELECT * FROM `register-details-customer` WHERE emailAdd = '$emailAdd' && passWord = '$passWord' ";
         
-
-
     $result = mysqli_query($conn, $select);
     
-
-
     if ($result && mysqli_num_rows($result) > 0 )
     {
       echo "<script> alert ('User Already Exist');  </script>";

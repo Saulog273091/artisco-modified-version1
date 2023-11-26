@@ -53,10 +53,11 @@ include("connect.php");
 
 if(isset($_POST['submitsell']))
 {
-    //print_r($_POST);
+    //print_r($_SESSION);
 
     $emailAdd = $_POST['emailAdd'];
     $passWord = $_POST['passWord'];
+    $storeName = $_SESSION['storeName'];
 
     if(!empty($emailAdd) && !empty($passWord)){
       $query_result = "SELECT * FROM `selle-ver` WHERE emailAdd = '$emailAdd' && passWord = '$passWord'";
@@ -71,7 +72,10 @@ if(isset($_POST['submitsell']))
 
               if($user_data["passWord"] == $passWord){
                 $_SESSION['passWord'] = $user_data['passWord'];
+                $_SESSION['storeName'] = $user_data['storeName'];
                   header("location: SellerLandingPage.php");
+
+                  
               }
           }   
       }

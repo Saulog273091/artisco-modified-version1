@@ -15,7 +15,7 @@
     
     if(isset($_POST['save']))
     {
-
+      //print_r($_SESSION);
         $lastName = $_POST['lastName'];
         $firstName = $_POST['firstName'];
         $middleName = $_POST['middleName'];
@@ -24,13 +24,16 @@
         $contactNum = $_POST['contactNum'];
         $emailAdd = $_POST['emailAdd'];
         $address = $_POST['address'];
-        $storeName = $_POST['storeName'];
+        $storeName = $_SESSION['storeName'];
         $passWord = $_POST['passWord'];
         $cpassWord = $_POST['cpassWord'];
         $image = $_FILES["image"]['name'];
        
         $select = "SELECT * FROM `selle-ver` WHERE emailAdd = '$emailAdd' && passWord = '$passWord' ";    
         $result = mysqli_query($conn, $select);
+
+        // $getstoreName = "INSERT INTO `products` (`productId`, `storeName`, `emailAdd`, `productName`, `price`, `category`, `productImage`) VALUES ('','$storeName','$emailAdd', '$productName', '$price', '$category','$newImageName')";
+        // $getresult = mysqli_query($conn, $getstoreName);
     
         if ($result && mysqli_num_rows($result) > 0 )
         {
