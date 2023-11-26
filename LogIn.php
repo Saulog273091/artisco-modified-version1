@@ -59,19 +59,19 @@ if(isset($_POST['submitsell']))
     $passWord = $_POST['passWord'];
 
     if(!empty($emailAdd) && !empty($passWord)){
-      $query = "SELECT * FROM `selle-ver` WHERE emailAdd = '$emailAdd' && passWord = '$passWord'";
-      $result = mysqli_query($conn, $query);
+      $query_result = "SELECT * FROM `selle-ver` WHERE emailAdd = '$emailAdd' && passWord = '$passWord'";
+      $result = mysqli_query($conn, $query_result);
 
 
       if($result){
 
           if($result && mysqli_num_rows($result) > 0){
               $user_data = mysqli_fetch_assoc($result);
+              $_SESSION['emailAdd'] = $user_data['emailAdd'];
 
               if($user_data["passWord"] == $passWord){
+                $_SESSION['passWord'] = $user_data['passWord'];
                   header("location: SellerLandingPage.php");
-                  die;
-
               }
           }   
       }

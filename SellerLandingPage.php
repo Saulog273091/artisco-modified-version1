@@ -4,7 +4,7 @@ include("connect.php");
 
 if(!isset($_SESSION['emailAdd'])){
     header("location:LogIn.php");
-    die();
+    //die();
 }
 ?>
 
