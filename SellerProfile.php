@@ -14,18 +14,18 @@ if(!isset($_SESSION['emailAdd'])){
 ?>
 
 
-
 <?php 
 include("connect.php");
 
 if(isset($_POST["add"])){  
 
-    //print_r($_Se);
+    //print_r($_SESSION);
+    global $storeName;
     $productName = $_POST['productName'];
     $price = $_POST['price'];
     $category = $_POST['category'];
-    $emailAdd = $_SESSION['emailAdd'];
-    //$retrievedstoreName = $_SESSION['storeName'];
+     $emailAdd = $_SESSION['emailAdd'];
+     $storeName = $_SESSION['storeName'];
 
 
     $productImage = $_FILES["image"]['name'];
@@ -55,13 +55,13 @@ if(isset($_POST["add"])){
 
                 move_uploaded_file($tmpName , 'products/' . $newImageName);
 
-                $sql_query = "INSERT INTO `products` (`productId`, `emailAdd`, `productName`, `price`, `category`, `productImage`) VALUES ('','$emailAdd', '$productName', '$price', '$category','$newImageName')";
+                $sql_query = "INSERT INTO `products` (`productId`, `storeName`, `emailAdd`, `productName`, `price`, `category`, `productImage`) VALUES ('','$storeName', '$emailAdd', '$productName', '$price', '$category','$newImageName')";
 
                       if(mysqli_query($conn, $sql_query)){
-                          echo "<script> alert ('Product Added Successfully!');  </script>";
+                        echo "<script> alert ('Product Added Successfully!');  </script>";
                       }
                       else{
-
+                        echo "<script> alert ('Product not Added!');  </script>";
                       }
             }
       }
