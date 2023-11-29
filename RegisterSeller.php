@@ -24,7 +24,7 @@
         $contactNum = $_POST['contactNum'];
         $emailAdd = $_POST['emailAdd'];
         $address = $_POST['address'];
-        $storeName = $_SESSION['storeName'];
+        $storeName = $_POST['storeName'];
         $passWord = $_POST['passWord'];
         $cpassWord = $_POST['cpassWord'];
         $image = $_FILES["image"]['name'];
