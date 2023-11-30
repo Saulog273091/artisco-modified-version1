@@ -8,6 +8,7 @@ if(!isset($_SESSION['emailAdd'])){
 }
 
 
+
 // if(isset($_SESSION['storeName'])){
 //     print_r($_SESSION);
 // }
@@ -16,7 +17,7 @@ if(!isset($_SESSION['emailAdd'])){
 
 <?php 
 include("connect.php");
-
+//print_r($_SESSION);
 if(isset($_POST["add"])){  
 
     //print_r($_SESSION);
@@ -24,8 +25,8 @@ if(isset($_POST["add"])){
     $productName = $_POST['productName'];
     $price = $_POST['price'];
     $category = $_POST['category'];
-     $emailAdd = $_SESSION['emailAdd'];
-     $storeName = $_SESSION['storeName'];
+    $emailAdd = $_SESSION['emailAdd'];
+    $storeName = $_SESSION['storeName'];
 
 
     $productImage = $_FILES["image"]['name'];
