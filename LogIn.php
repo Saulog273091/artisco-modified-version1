@@ -69,6 +69,7 @@ if(isset($_POST['submitsell']))
           if($result && mysqli_num_rows($result) > 0){
               $user_data = mysqli_fetch_assoc($result);
               $_SESSION['emailAdd'] = $user_data['emailAdd'];
+              $_SESSION['storeName'] = $user_data['storeName'];
 
               if($user_data["passWord"] == $passWord){
                 $_SESSION['passWord'] = $user_data['passWord'];

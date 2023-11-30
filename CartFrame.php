@@ -11,7 +11,6 @@ include("functions/common_function.php");
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
     <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./CartFrame.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@400&display=swap"
@@ -32,6 +31,8 @@ include("functions/common_function.php");
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./CartFrame.css" />
 
     <style>
       .cart_img{
@@ -79,44 +80,68 @@ include("functions/common_function.php");
             <tbody>
               <!--php code to display dynamic data-->
               <?php 
-              global $conn;
-              $get_ip_add = getIPAddress();
-              $total_price = 0;
-             // $storeName = $_POST['storeName'];
-              $cart_query = "SELECT * FROM `cart-details` WHERE `ip_address`='$get_ip_add'";
-              $result = mysqli_query($conn, $cart_query); 
-              $result_count = mysqli_num_rows($result);
-              if($result_count>0){
-                echo "<thead>
-                        <tr>
-                          <th></th>
-                          <th>Store Name</th>
-                          <th>Product Name</th>
-                          <th>Product Image</th>
-                          <th>Total Price</th>                                            
-                        </tr>
-                      </thead>";
-              
-              while($row=mysqli_fetch_array($result)){
-                $product_id = $row['product_id'];
-                $select_products = "SELECT * FROM `products` WHERE `productId` = '$product_id'";
-                $result_products = mysqli_query($conn, $select_products); 
-                while($row_product_price = mysqli_fetch_array($result_products)){
-                  $product_price = array($row_product_price['price']);
-                  $price_table = $row_product_price['price'];
-                  $product_title = $row_product_price['productName'];
-                  $product_image = $row_product_price['productImage'];
-                  $product_values = array_sum($product_price);
-                  $total_price += $product_values;
-               
+                global $conn;
+                $get_ip_add = getIPAddress();
+                $total_price = 0;
+                // $storeName = $_POST['storeName'];
+                $cart_query = "SELECT a.*, b.storename FROM `cart-details` as a 
+                  join products as b
+                  WHERE a.product_id = b.productId
+                  and `ip_address`='$get_ip_add'
+                  Order By b.storeName;";
+                // echo $cart_query;
+                $result = mysqli_query($conn, $cart_query); 
+                $result_count = mysqli_num_rows($result);
+                if($result_count>0){
+                  echo "<thead>
+                          <tr>
+                            <th></th>
+                            <th>Store Name</th>
+                            <th>Product Name</th>
+                            <th>Product Image</th>
+                            <th>Total Price</th>                                            
+                          </tr>
+                        </thead>";
+                              
+                $c_storeName = 'YFIKUYNG234234';
+                while($row=mysqli_fetch_array($result)){
+                  $product_id = $row['product_id'];                   
+                  $select_products = "SELECT * FROM `products` WHERE `productId` = '$product_id'";
+                  // echo $select_products;
+                  $result_products = mysqli_query($conn, $select_products); 
+                  while($row_product_price = mysqli_fetch_array($result_products))
+                  {
+                    $product_price = array($row_product_price['price']);
+                    $storeName = $row_product_price['storeName'];
+                    $price_table = $row_product_price['price'];
+                    $product_title = $row_product_price['productName'];
+                    $product_image = $row_product_price['productImage'];
+                    $product_values = array_sum($product_price);
+                    $total_price += $product_values;
+                    $new_row = ($c_storeName != $storeName) ? 1 : 0;
+                    // echo $new_row." ".$c_storeName." : ".$storeName."<br>";
+                    if ($new_row)
+                    {
+                      // border bottom visible   
+                      $style = '';                    
+                      $c_storeName = $storeName;
+                    }
+                    else
+                    {
+                      // border bottom transparent
+                      $style = "style ='border-top-color:transparent'";
+                    }
+                                       
               ?>
-              <tr>
+              <?php
+                echo "<tr ".$style.">";
+              ?>
+              <!-- <tr> -->
                 <td><input type="checkbox" name="removeitem[]" value="<?php echo $product_id ?>"></td>
-                <td></td>
+                <td><?php echo (!$new_row) ? !$storeName: $c_storeName ?></td>
                 <td><?php echo $product_title ?></td> 
                 <td><img src="./products/<?php echo $product_image ?>" alt="" class="cart_img"></td>
-                <td>₱<?php echo $price_table ?></td>
-                
+                <td>₱<?php echo $price_table ?></td>                
               </tr>
 
               <?php 

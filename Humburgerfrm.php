@@ -1,3 +1,19 @@
+<?php
+session_start();
+include("connect.php");
+include("./functions/common_function.php");
+
+if(!isset($_SESSION['emailAdd'])){
+    header("location:LogIn.php");
+    die();
+}
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -51,14 +67,14 @@
       );
       if (popuplogoutbtnContainer) {
         popuplogoutbtnContainer.addEventListener("click", function (e) {
-            window.location.href = "./index.html";
+            window.location.href = "./index.php";
         });
       }
       
       var popupaccbtnContainer = document.getElementById("popupaccbtnContainer");
       if (popupaccbtnContainer) {
         popupaccbtnContainer.addEventListener("click", function (e) {
-            window.location.href = "./AccountFrame.html";
+            window.location.href = "./AccountFrame.php";
         });
       }
       </script>
