@@ -36,10 +36,10 @@ include("functions/common_function.php");
 
     <style>
       .cart_img{
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-}
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      }
     </style>
   </head>
   <body>
@@ -135,14 +135,14 @@ include("functions/common_function.php");
               ?>
               <?php
                 echo "<tr ".$style.">";
-              ?>
-              <!-- <tr> -->
-                <td><input type="checkbox" name="removeitem[]" value="<?php echo $product_id ?>"></td>
-                <td><?php echo (!$new_row) ? !$storeName: $c_storeName ?></td>
-                <td><?php echo $product_title ?></td> 
-                <td><img src="./products/<?php echo $product_image ?>" alt="" class="cart_img"></td>
-                <td>₱<?php echo $price_table ?></td>                
-              </tr>
+                  ?>
+                  <!-- <tr> -->
+                    <td><input type="checkbox" name="removeitem[]" value="<?php echo $product_id ?>"></td>
+                    <td><?php echo (!$new_row) ? !$storeName: $c_storeName ?></td>
+                    <td><?php echo $product_title ?></td> 
+                    <td><img src="./products/<?php echo $product_image ?>" alt="" class="cart_img"></td>
+                    <td>₱<?php echo $price_table ?></td>                
+                  </tr>
 
               <?php 
                 }
@@ -166,7 +166,7 @@ include("functions/common_function.php");
             if($result_count>0){
                 echo"<h4 class='px-3'>Subtotal:<strong>₱ $total_price </strong></h4>
                 <a href='CustomerLandingPage.php' class='btn px-3 border-0 m-3'>Continue Shopping</a>
-                <a href='PaymentFrame.php' class='btn px-3 border-0 m-3'>Checkout</a>
+                <a href='PaypalFrame.php' class='btn px-3 border-0 m-3'>Checkout</a>
                 <!--<button class='px-3 border-0 mx-5'>Remove</button> -->
                 <input type='submit' value='Remove from cart' class='btn px-3 border-0 mx-3' name='remove_cart'>";
             }else{
@@ -184,6 +184,7 @@ include("functions/common_function.php");
     <?php 
     function remove_cart_item(){
       global $conn;
+      $remove_id = array();
       if(isset($_POST['remove_cart'])){
         foreach($_POST['removeitem'] as $remove_id){
           echo $remove_id;
@@ -192,7 +193,9 @@ include("functions/common_function.php");
           if($run_delete_query){
             echo "<script>window.open('CartFrame.php', '_self')</script>";
           }
+          
         }
+            echo "<script> alert('No selected products.'); </script>";
       }
     }
     echo $remove_item = remove_cart_item();

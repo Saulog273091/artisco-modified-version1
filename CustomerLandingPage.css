@@ -107,15 +107,15 @@
   height: 44px;
   object-fit: cover;
 }
-.upperframe2 {
+.upperframe4 {
   position: absolute;
-  top: 36px;
   left: 186px;
-  width: 1089px;
-  height: 5369px;
+  width: 100%;
+  height: 100%;
   font-size: var(--font-size-21xl);
   font-family: var(--font-shrikhand);
 }
+
 .product101,
 .product11,
 .product21,
@@ -256,10 +256,15 @@
 .digitalframe1,
 .productarea1 {
   position: absolute;
-  top: 5000px;
   left: 130px;
   width: 1193px;
-  height: px;
+  height: 0px;
+}
+.productarea{
+  position: absolute;
+  top: 10%;
+  height: 150%;
+  width: 100%;
 }
 .digitalframe1 {
   height: 98.11%;
@@ -533,21 +538,20 @@
   left: 130px;
 }
 .recommendfrm {
+  position: absolute;
   top: 546px;
-  left: 0;
-  width: 1440px;
+  left: 50px;
   height: 329px;
+  width: 10px;
 }
 .customerlandingpage {
-  position: relative;
-  background-color: var(--color-white);
+  display: absolute;
   width: 100%;
-  height: 5438px;
   text-align: left;
   font-size: var(--font-size-13xl);
   color: var(--color-black);
   font-family: var(--font-inter);
-  margin-top: -65%;
+  background-color: var(--color-white);
 }
 .help-support {
   position: absolute;
@@ -609,4 +613,11 @@
   left: 5%;
   height: 200px;
   object-fit: contain;
+}
+.profilelogo{
+  margin-left: 900%;
+  height: 60%;
+  width: 60%;
+  
+  
 }

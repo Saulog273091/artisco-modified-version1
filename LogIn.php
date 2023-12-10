@@ -15,7 +15,7 @@
 
         
         if(!empty($emailAdd) && !empty($passWord)){
-          $query = "SELECT * FROM `register-details-customer` WHERE emailAdd = '$emailAdd' && passWord = '$passWord'  ";
+          $query = "SELECT * FROM `register-details-customer` WHERE emailAdd = '$emailAdd' && passWord = '$passWord' LIMIT 1 ";
           $result = mysqli_query($conn, $query);
 
 
@@ -60,7 +60,7 @@ if(isset($_POST['submitsell']))
     //$storeName = $_SESSION['storeName'];
 
     if(!empty($emailAdd) && !empty($passWord)){
-      $query_result = "SELECT * FROM `selle-ver` WHERE emailAdd = '$emailAdd' && passWord = '$passWord'";
+      $query_result = "SELECT * FROM `selle-ver` WHERE emailAdd = '$emailAdd' && passWord = '$passWord' LIMIT 1" ;
       $result = mysqli_query($conn, $query_result);
 
 

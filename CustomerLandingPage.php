@@ -3,7 +3,7 @@ session_start();
 include("connect.php");
 include("./functions/common_function.php");
 
-if(!isset($_SESSION['emailAdd'])){
+if(!isset($_SESSION['emailAdd']) && !isset($_SESSION['passWord'])){
     header("location:LogIn.php");
     die();
 }
@@ -50,6 +50,31 @@ if(!isset($_SESSION['emailAdd'])){
         </a> -->
 
     <div class="customerlandingpage">
+      
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: absolute; top:0; width:100%;">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" style="font-style: italic; font-weight: bolder;" href="#">Artisti.co </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-3">
+      <li class="nav-item">
+        <a class="nav-link" href="CartFrame.php"> <img src= "./public/carticon@2x.png"  class="profilelogo" ></a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="AccountFrame.php"> <img src= "./public/accounticon@2x.png"  class="profilelogo" ></a>
+        </li>
+            
+      </ul>
+      
+    </div>
+  </div>
+</nav>
       <div class="lowerarea2">
         <div class="lowerframe2"></div>
         <div class="artistico-all-rights1">
@@ -63,7 +88,8 @@ if(!isset($_SESSION['emailAdd'])){
 
          
       <div class="upperframe4" >
-          <img
+
+          <!-- <img
         
           class="carticon2"
           />
@@ -91,53 +117,55 @@ if(!isset($_SESSION['emailAdd'])){
 
         <div class="artistico9">
           <div class="artistico8">Artisti.co</div>
-        </div>
+        </div> -->
 
       </div> 
+
+      
 
 
       <div class="productarea">
         
-        <div class="row px-3">
-    <div class=" col-md-12">
+        <div class="row px-4">
+          <div class=" col-md-12">
         <!-- products --> 
         <div class="row">
           <!-- fetching products -->
-          <?php 
-          
-          $select_query = "SELECT * FROM `products` order by rand()";
-          $result_query = mysqli_query($conn, $select_query); 
-          //$row = mysqli_fetch_assoc($result_query);
-          //echo $row['productName'];
-          while($row = mysqli_fetch_assoc($result_query)) {
-            $prod_Id = $row["productId"];
-            $product_id = $row['productName'];
-            $product_price = $row['price'];
-            $product_Image = $row['productImage'];
-            echo "<div class='col-md-3 mb-3'>
-            <div class='card'>
-  <img src='./products/$product_Image' class='card-img-top' alt='$product_id'>
-  <div class='card-body'>
-    <h5 class='card-title'>$product_id</h5>
-    <p class='card-text'>Price: ₱$product_price</p>
-    <a href='Sample.php?add_to_cart=$prod_Id' class='btn btn-info'>Add to Cart</a>
-    <a href='#' class='btn btn-secondary'>View More</a>
-  </div>
-</div>
+                              <?php 
+                              
+                              $select_query = "SELECT * FROM `products` order by rand()";
+                              $result_query = mysqli_query($conn, $select_query); 
+                              //$row = mysqli_fetch_assoc($result_query);
+                              //echo $row['productName'];
+                              while($row = mysqli_fetch_assoc($result_query)) {
+                                $prod_Id = $row["productId"];
+                                $product_id = $row['productName'];
+                                $product_price = $row['price'];
+                                $product_Image = $row['productImage'];
+                                echo "<div class='col-md-3 mb-4'>
+                                <div class='card'>
+                                <img src='./products/$product_Image' class='card-img-top' alt='$product_id'>
+                                <div class='card-body'>
+                                  <h5 class='card-title'>$product_id</h5>
+                                  <p class='card-text'>Price: ₱$product_price</p>
+                                  <a href='Sample.php?add_to_cart=$prod_Id' class='btn btn-info'>Add to Cart</a>
+                                  <a href='#' class='btn btn-secondary'>View More</a>
+                                </div>
+                              </div>
 
-            </div>";
-          }
-          ?> 
+                                </div>";
+                              }
+                              ?> 
         </div>
       </div>
     </div>
 
-        <img
+        <!-- <img
           class="humburgerbtn-icon1"
           alt=""
           src="./public/2.png"
           id="humburgerbtnIcon"
-        />
+        /> -->
       </div>
       <div class="digitalarts">
         <div class="digitalframe1"></div>
@@ -216,7 +244,7 @@ if(!isset($_SESSION['emailAdd'])){
       </div>
     </div>
 
-    <div id="humburgerfrmContainer" class="popup-overlay" style="display: none">
+    <!-- <div id="humburgerfrmContainer" class="popup-overlay" style="display: none">
       <div class="humburgerfrm">
         <div class="supportbtn">
           <div class="help-support">Help & Support</div>
@@ -237,7 +265,7 @@ if(!isset($_SESSION['emailAdd'])){
           <div class="help-support">Account</div>
         </div>
       </div>
-    </div>
+    </div> -->
     </div>  
 
     <script>

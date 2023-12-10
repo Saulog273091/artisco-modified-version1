@@ -53,14 +53,14 @@
       var cartIcon = document.getElementById("cartIcon");
       if (cartIcon) {
         cartIcon.addEventListener("click", function (e) {
-          window.location.href = "./CartFrame.html";
+          window.location.href = "./CartFrame.php";
         });
       }
       
       var artisticoContainer1 = document.getElementById("artisticoContainer1");
       if (artisticoContainer1) {
         artisticoContainer1.addEventListener("click", function (e) {
-          window.location.href = "./CustomerLandingPage.html";
+          window.location.href = "./CustomerLandingPage.php";
         });
       }
       </script>

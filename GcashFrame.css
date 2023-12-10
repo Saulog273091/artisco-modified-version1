@@ -1,262 +1,199 @@
-.lowerframe8 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color-gainsboro-100);
-  }
-  .artistico-all-rights4 {
-    position: absolute;
-    top: 41.94%;
-    left: 39.86%;
-  }
-  .artistico34,
-  .artistico35 {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .artistico34 {
-    height: 46.77%;
-    width: 13.82%;
-    top: 26.61%;
-    right: 70.83%;
-    bottom: 26.61%;
-    left: 15.35%;
-    font-size: var(--font-size-21xl);
-    font-family: var(--font-shrikhand);
-  }
-  .lowerarea8 {
-    position: absolute;
-    top: 1651px;
-    left: 0;
-    width: 1440px;
-    height: 124px;
-    font-size: var(--font-size-base);
-  }
-  .accounticon4,
-  .carticon4 {
-    position: absolute;
-    height: 2.35%;
-    width: 3.13%;
-    top: 2.32%;
-    right: 15.07%;
-    bottom: 95.34%;
-    left: 81.81%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    object-fit: cover;
-  }
-  .accounticon4 {
-    height: 2.61%;
-    top: 2.2%;
-    right: 9.03%;
-    bottom: 95.19%;
-    left: 87.85%;
-    cursor: pointer;
-  }
-  .artistico36,
-  .payment3 {
-    position: absolute;
-    font-size: var(--font-size-21xl);
-    font-family: var(--font-shrikhand);
-  }
-  .artistico36 {
-    top: 36px;
-    left: 196px;
-    width: 199px;
-    height: 58px;
-    cursor: pointer;
-  }
-  .payment3 {
-    top: 144px;
-    left: 142px;
-  }
-  .billing-info7,
-  .choose-payment-method3 {
-    position: absolute;
-    top: 236px;
-    left: 168px;
-  }
-  .billing-info7 {
-    top: 0;
-    left: 0;
-    font-size: var(--font-size-17xl);
-    font-weight: 800;
-  }
-  .billingadd-inner {
-    position: absolute;
-    top: 21px;
-    left: 0;
-    background-color: var(--color-gainsboro-100);
-    width: 516px;
-    height: 44px;
-  }
-  .billingadd2,
-  .contactnum-inner {
-    position: absolute;
-    top: 72px;
-    left: 0;
-    width: 516px;
-    height: 65px;
-  }
-  .contactnum-inner {
-    top: 20px;
-    background-color: var(--color-gainsboro-100);
-    height: 44px;
-  }
-  .billing-info6,
-  .contactnum2 {
-    position: absolute;
-    top: 160px;
-    left: 0;
-    width: 516px;
-    height: 64px;
-  }
-  .billing-info6 {
-    top: 668px;
-    left: 194px;
-    height: 224px;
-    font-size: var(--font-size-base);
-  }
-  .gcash-info4 {
-    font-weight: 800;
-  }
-  .gcash-info4,
-  .gcash-number,
-  .gcashnum1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .gcashnum1 {
-    top: 72px;
-    width: 516px;
-    height: 65px;
-    font-size: var(--font-size-base);
-  }
-  .gcash-info3 {
-    top: 668px;
-    left: 730px;
-    width: 516px;
-    height: 137px;
-    font-size: var(--font-size-17xl);
-  }
-  .back2,
-  .gcash-info3,
-  .gcash7 {
-    position: absolute;
-  }
-  .back2 {
-    top: 990px;
-    left: 846px;
-    font-size: var(--font-size-xl);
-    cursor: pointer;
-  }
-  .gcash7 {
-    top: 0;
-    left: 0;
-    border-radius: var(--br-12xl);
-    background-color: var(--color-gainsboro-100);
-    width: 380px;
-    height: 272px;
-  }
-  .pay-with-gcash3 {
-    position: absolute;
-    top: 193px;
-    left: 103px;
-  }
-  .gcash-horizontal-full-blue-tra-icon3 {
-    position: absolute;
-    top: 93px;
-    left: 64px;
-    width: 252px;
-    height: 85px;
-    object-fit: cover;
-  }
-  .gcash6,
-  .paypal-1-icon3 {
-    position: absolute;
-    top: 299px;
-    left: 130px;
-    width: 380px;
-    height: 272px;
-  }
-  .paypal-1-icon3 {
-    top: 110px;
-    left: 56px;
-    width: 269px;
-    height: 52px;
-    object-fit: cover;
-  }
-  .pay-with-paypal3,
-  .paypal6 {
-    position: absolute;
-    top: 193px;
-    left: 100px;
-  }
-  .paypal6 {
-    top: 299px;
-    left: 530px;
-    width: 380px;
-    height: 272px;
-    cursor: pointer;
-  }
-  .pay-in-cash3 {
-    position: absolute;
-    top: 193px;
-    left: 124px;
-  }
-  .dollar-money-cash-icon-14-13 {
-    position: absolute;
-    top: 73px;
-    left: 130px;
-    width: 120px;
-    height: 115px;
-    object-fit: cover;
-  }
-  .cash6 {
-    position: absolute;
-    top: 299px;
-    left: 930px;
-    width: 380px;
-    height: 272px;
-    cursor: pointer;
-  }
-  .proceedbtn-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: var(--br-mini);
-    background-color: var(--color-gainsboro-100);
-    width: 300px;
-    height: 49px;
-  }
-  .proceed2,
-  .proceedbtn2 {
-    position: absolute;
-    top: 13px;
-    left: 103px;
-  }
-  .proceedbtn2 {
-    top: 977px;
-    left: 946px;
-    width: 300px;
-    height: 49px;
-    font-size: var(--font-size-xl);
-  }
-  .gcashframe {
-    position: relative;
-    background-color: var(--color-white);
-    width: 100%;
-    height: 1775px;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--color-black);
-    font-family: var(--font-inter);
-  }
+.lowerframe {
+  position: absolute;
+  top: 750px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: grey;
+}
+.upperframe{
+  position: absolute;
+  
+  top: 0px;
+  right: 0;
+  bottom: 750px;
+  left: 0;
+  background-color: grey;
+
+}
+.artistico-all-rights{
+  position: absolute;
+  top: 800px;
+  left: 600px;
+  font-weight: bolder;
+  font-style: italic;
+}
+.artistico{
+  position:absolute;
+  top: 3%;
+  font-size:40px;
+  font-weight:bolder;
+  font-style: italic;
+
+}
+.artistico2 {
+  position: absolute;
+  top: 780px;
+  left: 0;
+  font-family:var(--font-shrikhand);
+  font-weight: bolder;
+  font-size: 50px;
+  font-style: italic;
+  
+}
+ .artistico26{
+  height: 46.77%;
+  width: 13.82%;
+  top: 26.61%;
+  right: 70.83%;
+  bottom: 26.61%;
+  left: 15.35%;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-shrikhand);
+} 
+.lowerarea6 {
+  position: absolute;
+  top: 706px;
+  left: -12px;
+  width: 1440px;
+  height: 124px;
+  font-size: var(--font-size-base);
+}
+.accounticon2,
+.carticon {
+  position: absolute;
+  height: 4.98%;
+  width: 3.11%;
+  top: 3%;
+  right: 16.58%;
+  bottom: 90.3%;
+  left: 80.31%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.accounticon{
+  position: absolute;
+  height: 4.98%;
+  top: 3%;
+  right: 9.53%;
+  bottom: 89.93%;
+  left: 87.37%;
+  cursor: pointer;
+}
+.artistico28,
+.payment{
+  position: absolute;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-shrikhand);
+}
+.artistico28 {
+  top: 36px;
+  left: 196px;
+  width: 199px;
+  height: 58px;
+  cursor: pointer;
+}
+.payment {
+  top: 150px;
+  left: 700px;
+  font-weight:bold;
+  font-size: larger;
+}
+.merchandise-subtotal {
+  position: absolute;
+  top: 273px;
+  left: 168px;
+}
+.subtotaloutput,
+.total-payment,
+.totaloutput {
+  position: absolute;
+  top: 273px;
+  left: 544px;
+}
+.total-payment,
+.totaloutput {
+  top: 323px;
+}
+.total-payment {
+  top: 319px;
+  left: 164px;
+  font-size: 26px;
+  font-weight: 600;
+}
+.gcash-info1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 800;
+}
+.gcash-info {
+  position: absolute;
+  top: 207px;
+  left: 1100px;
+  width: 197px;
+  height: 44px;
+  font-size: var(--font-size-17xl);
+}
+.gcash-number,
+.numberinput {
+  position: absolute;
+  top:  10px;
+  left: -140px;
+}
+input {
+  top: 30px;
+  background-color: var(--color-gainsboro-100);
+  width: 378px;
+  height: 39px;
+}
+.gcashnum,
+button{
+  position: absolute;
+  top: 273px;
+  left: 1000px;
+  width: 378px;
+  height: 69px;
+}
+.upload {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-dimgray-200);
+  height: 39px;
+}
+.upload-proof-of,
+.uploadbtn {
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  width: 378px;
+  height: 3009px;
+  color: var(--color-black);
+}
+
+.gcashfrm {
+  position: relative;
+  background-color:lightgray;
+  width: 100%;
+  height: 830px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+
+.confirmbtn{
+  position:absolute;
+  top: 300px;
+  left: 500px;
+  border-radius: 0cap;
+  border-radius: 11%;
+  border-style: double;
+  border-color: black;
+  
+  
+}

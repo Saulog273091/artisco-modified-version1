@@ -1,262 +1,126 @@
-.lowerframe7 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color-gainsboro-100);
-  }
-  .artistico-all-rights3 {
-    position: absolute;
-    top: 41.94%;
-    left: 39.86%;
-  }
-  .artistico30,
-  .artistico31 {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .artistico30 {
-    height: 46.77%;
-    width: 13.82%;
-    top: 26.61%;
-    right: 70.83%;
-    bottom: 26.61%;
-    left: 15.35%;
-    font-size: var(--font-size-21xl);
-    font-family: var(--font-shrikhand);
-  }
-  .lowerarea7 {
-    position: absolute;
-    top: 1651px;
-    left: 0;
-    width: 1440px;
-    height: 124px;
-    font-size: var(--font-size-base);
-  }
-  .accounticon3,
-  .carticon3 {
-    position: absolute;
-    height: 2.35%;
-    width: 3.13%;
-    top: 2.32%;
-    right: 15.07%;
-    bottom: 95.34%;
-    left: 81.81%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    object-fit: cover;
-  }
-  .accounticon3 {
-    height: 2.61%;
-    top: 2.2%;
-    right: 9.03%;
-    bottom: 95.19%;
-    left: 87.85%;
-    cursor: pointer;
-  }
-  .artistico32,
-  .payment2 {
-    position: absolute;
-    font-size: var(--font-size-21xl);
-    font-family: var(--font-shrikhand);
-  }
-  .artistico32 {
-    top: 36px;
-    left: 196px;
-    width: 199px;
-    height: 58px;
-    cursor: pointer;
-  }
-  .payment2 {
-    top: 144px;
-    left: 142px;
-  }
-  .billing-info5,
-  .choose-payment-method2 {
-    position: absolute;
-    top: 236px;
-    left: 168px;
-  }
-  .billing-info5 {
-    top: 0;
-    left: 0;
-    font-size: var(--font-size-17xl);
-    font-weight: 800;
-  }
-  .billingadd-item {
-    position: absolute;
-    top: 21px;
-    left: 0;
-    background-color: var(--color-gainsboro-100);
-    width: 516px;
-    height: 44px;
-  }
-  .billingadd1,
-  .contactnum-item {
-    position: absolute;
-    top: 72px;
-    left: 0;
-    width: 516px;
-    height: 65px;
-  }
-  .contactnum-item {
-    top: 20px;
-    background-color: var(--color-gainsboro-100);
-    height: 44px;
-  }
-  .billing-info4,
-  .contactnum1 {
-    position: absolute;
-    top: 160px;
-    left: 0;
-    width: 516px;
-    height: 64px;
-  }
-  .billing-info4 {
-    top: 668px;
-    left: 194px;
-    height: 224px;
-    font-size: var(--font-size-base);
-  }
-  .paypal-info {
-    font-weight: 800;
-  }
-  .card-number,
-  .gcashnum,
-  .paypal-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .gcashnum {
-    top: 72px;
-    width: 516px;
-    height: 65px;
-    font-size: var(--font-size-base);
-  }
-  .gcash-info2 {
-    top: 668px;
-    left: 730px;
-    width: 516px;
-    height: 137px;
-    font-size: var(--font-size-17xl);
-  }
-  .back1,
-  .gcash-info2,
-  .gcash5 {
-    position: absolute;
-  }
-  .back1 {
-    top: 990px;
-    left: 846px;
-    font-size: var(--font-size-xl);
-    cursor: pointer;
-  }
-  .gcash5 {
-    top: 0;
-    left: 0;
-    border-radius: var(--br-12xl);
-    background-color: var(--color-gainsboro-100);
-    width: 380px;
-    height: 272px;
-  }
-  .pay-with-gcash2 {
-    position: absolute;
-    top: 193px;
-    left: 103px;
-  }
-  .gcash-horizontal-full-blue-tra-icon2 {
-    position: absolute;
-    top: 93px;
-    left: 64px;
-    width: 252px;
-    height: 85px;
-    object-fit: cover;
-  }
-  .gcash4 {
-    position: absolute;
-    top: 299px;
-    left: 130px;
-    width: 380px;
-    height: 272px;
-    cursor: pointer;
-  }
-  .paypal-1-icon2 {
-    position: absolute;
-    top: 110px;
-    left: 56px;
-    width: 269px;
-    height: 52px;
-    object-fit: cover;
-  }
-  .pay-with-paypal2,
-  .paypal4 {
-    position: absolute;
-    top: 193px;
-    left: 100px;
-  }
-  .paypal4 {
-    top: 299px;
-    left: 530px;
-    width: 380px;
-    height: 272px;
-  }
-  .pay-in-cash2 {
-    position: absolute;
-    top: 193px;
-    left: 124px;
-  }
-  .dollar-money-cash-icon-14-12 {
-    position: absolute;
-    top: 73px;
-    left: 130px;
-    width: 120px;
-    height: 115px;
-    object-fit: cover;
-  }
-  .cash4 {
-    position: absolute;
-    top: 299px;
-    left: 930px;
-    width: 380px;
-    height: 272px;
-    cursor: pointer;
-  }
-  .proceedbtn-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: var(--br-mini);
-    background-color: var(--color-gainsboro-100);
-    width: 300px;
-    height: 49px;
-  }
-  .proceed1,
-  .proceedbtn1 {
-    position: absolute;
-    top: 13px;
-    left: 103px;
-  }
-  .proceedbtn1 {
-    top: 977px;
-    left: 946px;
-    width: 300px;
-    height: 49px;
-    font-size: var(--font-size-xl);
-  }
-  .paypalframe {
-    position: relative;
-    background-color: var(--color-white);
-    width: 100%;
-    height: 1775px;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-5xl);
-    color: var(--color-black);
-    font-family: var(--font-inter);
-  }
+.lowerframe5 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-100);
+}
+.artistico-all-rights1 {
+  position: absolute;
+  top: 41.94%;
+  left: 39.86%;
+}
+.artistico22,
+.artistico23 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.artistico22 {
+  height: 46.77%;
+  width: 13.82%;
+  top: 26.61%;
+  right: 70.83%;
+  bottom: 26.61%;
+  left: 15.35%;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-shrikhand);
+}
+.carticon1,
+.lowerarea5 {
+  position: absolute;
+  top: 1651px;
+  left: 0;
+  width: 1440px;
+  height: 124px;
+}
+.carticon1 {
+  height: 2.35%;
+  width: 3.13%;
+  top: 2.32%;
+  right: 15.07%;
+  bottom: 95.34%;
+  left: 81.81%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.accounticon1,
+.artistico24 {
+  position: absolute;
+  cursor: pointer;
+}
+.accounticon1 {
+  height: 2.61%;
+  width: 3.13%;
+  top: 2.2%;
+  right: 9.03%;
+  bottom: 95.19%;
+  left: 87.85%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.artistico24 {
+  top: 36px;
+  left: 196px;
+  width: 199px;
+  height: 58px;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-shrikhand);
+}
+.cart1 {
+  position: absolute;
+  /* top: 1344px;
+  left: 130px;
+  border-radius: var(--br-12xl);
+  background-color: var(--color-gainsboro-100);
+  width: 1180px;
+  height: 272px; */
+}
+.cart1,
+.cart2,
+.cart3,
+.cart4 {
+  top: 1037px;
+}
+.cart1,
+.cart2,
+.cart3 {
+  top: 730px;
+}
+.cart1,
+.cart2 {
+  top: 423px;
+}
+.cart1 {
+  top: 116px;
+}
+.cartframe {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1775px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+
+tr {
+  border-bottom:none;
+}
+
+table{
+  border-style: solid;
+}
+/*.cart_img{
+  width: 50px;
+  height: 50px;
+}*/

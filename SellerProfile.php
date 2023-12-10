@@ -2,7 +2,7 @@
 session_start();
 include("connect.php");
 
-if(!isset($_SESSION['emailAdd'])){
+if(!isset($_SESSION['emailAdd']) && !isset($_SESSION['passWord'])){
     header("location:LogIn.php");
     die();
 }
@@ -109,7 +109,9 @@ if(isset($_POST["add"])){
             <img src=".\public\icons8-feedback-50.png" alt="feedbackButtonpng" border="0" />
         </button>
 
-        <div class="profileHead sellerProfile">Seller's Profile</div>
+        <div class="profileHead sellerProfile">
+        <h1>Welcome <?php echo $_SESSION['storeName']; ?></h1>
+        </div>
 
         <div class="frame"></div>
 
