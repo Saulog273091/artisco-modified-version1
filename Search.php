@@ -15,7 +15,7 @@ if(!isset($_SESSION['emailAdd']) && !isset($_SESSION['passWord'])){
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Customer Page</title>
 
     <link rel="stylesheet" href="./global.css" />
@@ -51,30 +51,29 @@ if(!isset($_SESSION['emailAdd']) && !isset($_SESSION['passWord'])){
         <button class="btnLogout" name="logout">Log Out</button>
         </a> -->
 
-    <div class="customerlandingpage" style="position:relative; width:50%; top:0;">
+    <div class="customerlandingpage" style="position:relative; width: 90%; top:0;">
 
       
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" style=" margin:auto; width:100%; display: block; top:0;  ">
-    <div class="container-fluid bg-white">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: absolute; top:0; width: 111%; ">
+    <div class="container-fluid " style="background-color: var(--color-gainsboro-100);">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" style="font-size: var(--font-size-21xl); font-family: var(--font-shrikhand);" href="CustomerLandingPage.php">Artisti.co </a>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <form class="d-flex" role="search" action= "Search.php" method="get">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_data">
-        <input type="submit" value="Search" class="btn btn-outline-dark" name="search_prod">
-      </form>
+    <a class="navbar-brand" style="font-size: var(--font-size-21xl); font-family: var(--font-shrikhand);" href="CustomerLandingPage.php">Artisti.co </a>    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <form class="d-flex" role="search" action="" method="get">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_data">
+           
+            <input type="submit" value="Search" class="btn btn-outline-dark" name="search_prod">
+          </form>
       <ul class="navbar-nav me-auto mb-2 mb-lg-3">
-      <li class="nav-item">
-        <a class="nav-link" href="CartFrame.php"> <img src= "./public/carticon@2x.png"  class="profilelogo" ></a>
-        </li>
-      <li class="nav-item">
-        <a class="nav-link" href="AccountFrame.php"> <img src= "./public/accounticon@2x.png"  class="profilelogo" ></a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="CartFrame.php"> <img src= "./public/carticon@2x.png"  class="profilelogo" ></a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AccountFrame.php"> <img src= "./public/accounticon@2x.png"  class="profilelogo" ></a>
+            </li>
             
-      </ul>
-      
+      </ul> 
     </div>
   </div>
 </nav>
@@ -88,7 +87,10 @@ if(!isset($_SESSION['emailAdd']) && !isset($_SESSION['passWord'])){
         </div>
       </div>
 
-
+<!-- calling cart function -->
+<?php
+  cart();
+?>
          
       <div class="upperframe4" >
 
@@ -132,60 +134,20 @@ if(!isset($_SESSION['emailAdd']) && !isset($_SESSION['passWord'])){
         <div class="row px-4">
           <div class=" col-md-12">
         <!-- products --> 
-        <div class="row">
+          <div class="row">
           <!-- fetching products -->
-          <?php 
+                             
+                              <?php
+                              search();
+                              getUniqueCategories();
                               
-                              if(!isset($_GET['category'])){
-                                  $select_query = "SELECT * FROM `products` order by rand()";
-                                  $result_query = mysqli_query($conn, $select_query); 
-                                  while($row = mysqli_fetch_assoc($result_query)) {
-                                        $prod_Id = $row["productId"];
-                                        $product_id = $row['productName'];
-                                        $product_price = $row['price'];
-                                        $product_Image = $row['productImage'];
-                                        $category = $row['category'];
-                                        $prod_description= $row['Product_Description'];
-                                        $prod_type= $row['Product_Type'];
-                                        $daystocreate= $row['Days_To_Create'];
-          
-                                        echo "<div class='col-md-3 mb-3'>
-                                                  <div class='card'>
-                                                    <img src='./products/$product_Image' class='card-img-top ' alt='$product_id'>
-                                                    <div class='card-body'>
-                                                      <h3 class='card-title'>$product_id</h3>
-                                                      <h5 class='card-title'>$prod_description</h5>
-                                                      <h5 class='card-title'>$prod_type</h5>
-                                                      <h5 class='card-title'>$daystocreate</h5>
-                                                      <h6 class='card-title' style='color: green;'>$category</h6>
-                                                      <h5 class='card-title'>Price: ₱$product_price</h5>
-                                                      
-                                                      <a href='CustomerLandingPage.php?add_to_cart=$prod_Id' class='btn btn-info'>Add to Cart</a>
-                                                      <a href='#' class='btn btn-secondary'>View More</a>
-                                                    </div>
-                                                  </div>
-                                              </div>";
-                                                }
-                                      
-                                      }
-                                        ?>
-                              
-              <?php
-              getUniqueCategories();
-              search();
-              
-              ?>
+                              ?>
         </div>
       </div>
     </div>
 
-        <!-- <img
-          class="humburgerbtn-icon1"
-          alt=""
-          src="./public/2.png"
-          id="humburgerbtnIcon"
-        /> -->
       </div>
+      
       <form action="CustomerLandingPage.php" method="get">
           <div class="digitalarts">
             <div class="digitalframe1"></div>
@@ -246,6 +208,8 @@ if(!isset($_SESSION['emailAdd']) && !isset($_SESSION['passWord'])){
             </div>
           </div>
         </form>
+
+     
 
 <!-- calling cart function -->
 <?php

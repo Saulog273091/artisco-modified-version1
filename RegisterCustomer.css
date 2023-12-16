@@ -1,11 +1,15 @@
 .lowerarea-inner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   background-color: var(--color-gainsboro-100);
+  width: 1440px;
+  height: 240px;
 }
-.lowerarea-inner,
 .lowerarea2 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   width: 1440px;
   height: 240px;
 }
@@ -37,15 +41,15 @@
   top: 138px;
   left: 1157px;
 }
-.lowerframe2,
 .terms-conditions2 {
   position: absolute;
   top: 138px;
   left: 926px;
 }
 .lowerframe2 {
+  position: absolute;
   top: 1460px;
-  left: 0;
+  left: 0px;
   width: 1440px;
   height: 240px;
   font-size: var(--font-size-xl);
@@ -54,7 +58,7 @@
   position: absolute;
   top: -1px;
   left: -1px;
-  background-color: var(--color-gainsboro-300);
+  background-color: var(--color-gainsboro-200);
   border: 1px solid var(--color-black);
   box-sizing: border-box;
   width: 602px;
@@ -63,7 +67,7 @@
 .image4-icon2 {
   position: absolute;
   top: 21px;
-  left: 0;
+  left: 0px;
   width: 650px;
   height: 368px;
   object-fit: cover;
@@ -79,7 +83,6 @@
   width: 494px;
   height: 231px;
 }
-.indicator2,
 .labelabout2 {
   position: absolute;
   top: 51px;
@@ -87,7 +90,10 @@
   font-weight: 900;
 }
 .indicator2 {
+  position: absolute;
+  top: 51px;
   left: 673px;
+  font-weight: 900;
   display: inline-block;
   width: 57px;
 }
@@ -100,12 +106,23 @@
   font-size: var(--font-size-29xl);
 }
 .image1-icon2 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  transform: scale(1.017);
+}
+.wrapper-image11 {
   position: absolute;
   top: 66px;
-  left: 0;
+  left: 0px;
   width: 1440px;
-  height: 467px;
-  object-fit: cover;
+  height: 459px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .glowarea2 {
   position: relative;
@@ -176,15 +193,13 @@
   object-fit: cover;
 }
 .artistico8 {
-  left: 0;
-}
-.about8,
-.artistico7,
-.artistico8 {
   position: absolute;
-  top: 0;
+  top: 0%;
+  left: 0%;
 }
 .artistico7 {
+  position: absolute;
+  top: 0px;
   left: 130px;
   width: 199px;
   height: 58px;
@@ -192,13 +207,13 @@
   font-size: var(--font-size-21xl);
   font-family: var(--font-shrikhand);
 }
-.about8 {
-  left: 0;
+.about9  {
+  position: absolute;
+  top: 0%;
+  left: 0%;
   font-weight: 500;
 }
-.about7,
-.log-in5,
-.register5 {
+.about7 {
   position: absolute;
   top: 10px;
   left: 878px;
@@ -206,19 +221,26 @@
   height: 38px;
   cursor: pointer;
 }
-.log-in5,
-.register5 {
+.about8 {
+  position: absolute;
+  top: 10px;
   left: 1030px;
   width: 127px;
+  height: 38px;
+  cursor: pointer;
 }
-.log-in5 {
+.about10{
+  position: absolute;
+  top: -20px;
   left: 1215px;
   width: 95px;
+  height: 38px;
+  cursor: pointer;
 }
 .upperframe2 {
   position: absolute;
   top: 22px;
-  left: 0;
+  left: 0px;
   width: 1440px;
   height: 525px;
   font-size: var(--font-size-13xl);
@@ -250,8 +272,8 @@
 }
 .image6-icon2 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   width: 240px;
   height: 244px;
   object-fit: cover;
@@ -283,14 +305,13 @@
 }
 .image7-icon2 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   width: 244px;
   height: 174px;
   object-fit: cover;
 }
-.digitalframe2,
-.image8-icon2 {
+.digitalframe2 {
   position: absolute;
   top: 582px;
   left: 497px;
@@ -298,8 +319,9 @@
   height: 185px;
 }
 .image8-icon2 {
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   width: 193px;
   height: 156px;
   object-fit: cover;
@@ -331,8 +353,8 @@
 }
 .loginregisterframe1 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 7px;
+  left: -83px;
   border-radius: var(--br-32xl);
   background: linear-gradient(
     180deg,
@@ -340,138 +362,121 @@
     rgba(213, 215, 217, 0.85) 99.99%,
     rgba(176, 182, 188, 0)
   );
-  width: 1117px;
-  height: 771px;
+  width: 1161px;
+  height: 402px;
 }
 .confirm-password {
   position: absolute;
-  top: 0;
-  left: 1.1px;
+  top: -36px;
+  left: -68.8px;
   font-weight: 600;
+  font-size: 19px;
   display: inline-block;
-  width: 262.1px;
+  width: 282.9px;
 }
 input {
   position: absolute;
-  top: 29px;
-  left: 0;
+  top: -14px;
+  left: -72px;
+  font-size: 15px;
   border-radius: var(--br-xs);
   background-color: var(--color-white);
-  column-gap: 6px;
-  width: 98%;
-  height: 52px;
+  width: 285px;
+  height: 29px;
 }
 .confirmpassfrm {
   position: absolute;
-  top: 527px;
-  left: 541px;
-  width: 537px;
-  height: 81px;
+  top: 285px;
+  left: 634px;
+  width: 478px;
+  height: 65px;
 }
 .create-password {
   position: absolute;
-  top: 0;
-  left: 1px;
+  top: -36px;
+  left: -70px;
   font-weight: 600;
+  font-size: 19px;
   display: inline-block;
-  width: 246px;
+  width: 230.7px;
+  height: 21.4px;
 }
-.createpass,
-.createpassfrm {
+.myInput input {
   position: absolute;
-  width: 504px;
-}
-input {
-  top: 29px;
-  left: 0;
+  top: 25.9px;
+  left: 0px;
   border-radius: var(--br-xs);
   background-color: var(--color-white);
-  column-gap: 4px;
-  width: 98%;
-  height: 52px;
+  width: 655px;
+  height: 32.1px;
+}
+.check-box{
+  position: absolute;
+  top: 35px;
+  left: 336px;
+}
+.show-pass{
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0%;
+  top: 44px;
+  left: 366px;
+  font-size: 13px;
 }
 .createpassfrm {
-  top: 527px;
-  left: 31px;
-  height: 81px;
-}
-.log-in7 {
-  flex: 1;
-  position: relative;
-  font-weight: 600;
-}
-.logslidersbtn1,
-.regslidersbtn1 {
   position: absolute;
-  top: 23px;
-  border-radius: var(--br-7xl);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--font-size-21xl);
+  top: 285px;
+  left: 329px;
+  width: 466px;
+  height: 58px;
 }
-.logslidersbtn1 {
-  left: 461px;
-  background: linear-gradient(
-    180deg,
-    #e5ddd9,
-    rgba(229, 221, 217, 0.64) 99.99%,
-    rgba(229, 221, 217, 0)
-  );
-  width: 617px;
-  padding: var(--padding-9xs) var(--padding-195xl);
-  box-sizing: border-box;
-  cursor: pointer;
-  text-align: right;
-}
-.regslidersbtn1 {
-  left: 29px;
-  background-color: var(--color-dimgray-200);
-  padding: var(--padding-9xs) var(--padding-159xl);
-  color: var(--color-white);
-}
+
 .reg {
   position: relative;
   font-weight: 600;
 }
 button {
   position: absolute;
-  top: 635px;
-  left: 374px;
+  top: 312px;
+  left: 364px;
   border-radius: var(--br-2xl);
-  background-color: var(--color-dimgray-200);
+  background-color: var(--color-black);
+  opacity: 0.6;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: var(--padding-8xs) var(--padding-64xl);
+  cursor: pointer;
   text-align: right;
-  font-size: var(--font-size-17xl);
+  font-size: var(--font-size-3xl);
   color: var(--color-white);
 }
 .seller {
   flex: 1;
   position: relative;
   font-weight: 500;
+  left: 25px;
 }
 .sellerslider {
   position: absolute;
-  top: 99px;
-  left: 278px;
+  top: 71px;
+  left: 299px;
   border-radius: var(--br-smi);
   background-color: var(--color-lightgray-200);
-  width: 552px;
+  width: 440px;
+  flex-shrink: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 0 var(--padding-80xl);
+  padding: 0px var(--padding-80xl);
   box-sizing: border-box;
   cursor: pointer;
   text-align: right;
-  font-size: var(--font-size-13xl);
+  font-size: var(--font-size-5xl);
 }
 .customer {
   position: relative;
@@ -479,114 +484,148 @@ button {
 }
 .customerslider {
   position: absolute;
-  top: 99px;
-  left: 278px;
+  top: 71px;
+  left: 301px;
   border-radius: var(--br-smi);
-  background-color: var(--color-dimgray-200);
+  background-color: var(--color-black);
+  opacity: 0.6;
+  width: 228px;
+  flex-shrink: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 0 var(--padding-45xl);
+  padding: 0px var(--padding-45xl);
+  box-sizing: border-box;
   text-align: right;
-  font-size: var(--font-size-13xl);
+  font-size: var(--font-size-5xl);
   color: var(--color-white);
 }
 .address {
   position: absolute;
-  top: 0;
-  left: 2.6px;
+  top: -36px;
+  left: -64.4px;
   font-weight: 600;
+  font-size: 19px;
   display: inline-block;
-  width: 532.7px;
+  width: 325.2px;
+  height: 24.7px;
 }
-.addressframe,
-.addressinput {
+.address input{
   position: absolute;
-  width: 1050px;
-}
-input{
-  top: 29px;
-  left: 0;
+  top: 32px;
+  left: 0px;
   border-radius: var(--br-xs);
   background-color: var(--color-white);
-  column-gap: 4px;
-  width: 98%;
-  height: 52px;
+  width: 591px;
+  height: 37.1px;
 }
 .addressframe {
-  top: 427px;
+  position: absolute;
+  top: 285px;
   left: 28px;
-  height: 81px;
+  width: 591px;
+  height: 69.1px;
 }
 .email-address {
   position: absolute;
-  top: 0;
-  left: 2px;
+  top: -36px;
+  left: -68px;
   font-weight: 600;
+  font-size: 19px;
   display: inline-block;
-  width: 402.1px;
+  width: 197.7px;
 }
-input {
+.emailAdd input{
   position: absolute;
-  top: 29px;
-  left: 0;
+  top: 32px;
+  left: 0px;
   border-radius: var(--br-xs);
   background-color: var(--color-white);
-  column-gap: 4px;
-  width: 98%;
-  height: 52px;
+  width: 356px;
+  height: 35px;
 }
 .emailaddressframe {
   position: absolute;
-  top: 327px;
-  left: 31px;
-  width: 1047px;
-  height: 81px;
+  top: 211px;
+  left: 634px;
+  width: 356px;
+  height: 67px;
 }
 .contact-number {
   position: absolute;
-  top: 0;
-  left: 1.4px;
+  top: -36px;
+  left: -69.4px;
   font-weight: 600;
+  font-size: 19px;
   display: inline-block;
   width: 197.5px;
 }
-input {
+.contactNum input{
   position: absolute;
   top: 29px;
-  left: 0;
+  left: 0px;
   border-radius: var(--br-xs);
   background-color: var(--color-white);
-  column-gap: 4px;
-  width: 98%;
-  height: 52px;
+  width: 514px;
+  height: 37px;
 }
 .contactnumframe {
   position: absolute;
-  top: 230px;
-  left: 608px;
-  width: 470px;
-  height: 81px;
+  top: 211px;
+  left: 329px;
+  width: 514px;
+  height: 66px;
 }
 .gender {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -36px;
+  left: 9px;
   font-weight: 600;
-  display: flex;
-  width: 95px;
+  font-size: 19px;
+  display: inline-block;
+  width: 110.1px;
+  height: 21.3px;
 }
-.genderframe,
-.genderinput {
+.radiobtnfemale button{
   position: absolute;
-  width: 10%;
-  column-gap: 0;
-  padding: 0%;
-  margin: 0%;
+  top: 25.8px;
+  left: 7px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  width: 22px;
+  height: 18.7px;
+}
+.radiobtnmale button{
+  position: absolute;
+  top: 48.9px;
+  left: 7px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  width: 22px;
+  height: 18.7px;
+}
+.male {
+  position: absolute;
+  top: 10px;
+  left: 33px;
+  font-weight: 600;
+  display: inline-block;
+  width: 110.1px;
+  height: 21.3px;
+}
+.female {
+  position: absolute;
+  top: 50px;
+  left: 33px;
+  font-weight: 600;
+  display: inline-block;
+  width: 110.1px;
+  height: 21.3px;
 }
 input[type="radio"]{
   display: none;
+  padding: 1px;
 }
 label{
   display: block;
@@ -597,7 +636,8 @@ label{
 label span{
   display: inline-flex;
   align-items: center;
-  padding: 10px 20px 10px 10px;
+  font-size: 18px;
+  padding: 1px;
   border-radius: 20px;
   transition: .25s ease;
 }
@@ -617,144 +657,196 @@ label span:before{
 input[type="radio"]:checked + span:before{
   box-shadow: inset 0 0 0 10px grey;
 }
-input {
-  padding: 0%;
-  margin: 0%;
-}
 .genderframe {
-  top: 230px;
-  left: 406px;
-  height: 0;
+  position: absolute;
+  top: 138px;
+  left: 863px;
+  width: 143.1px;
+  height: 67.6px;
 }
 .birthdate {
-  top: 0;
-  left: 0;
-  font-weight: 600;
-  display: inline-block;
-}
-.birthdate,
-.birthdatefrm,
-.birthinput {
   position: absolute;
+  top: -36px;
+  left:-68px;
+  font-weight: 600;
+  font-size: 19px;
+  display: inline-block;
   width: 374px;
 }
-input {
+.birthDate input{
+  position: absolute;
   top: 29px;
-  left: 0;
+  left: 0px;
   border-radius: var(--br-xs);
   background-color: var(--color-white);
-  column-gap: 4px;
-  width: 98%;
-  height: 52px;
+  width: 289px;
+  height: 37px;
 }
 .birthdatefrm {
-  top: 230px;
+  position: absolute;
+  top: 211px;
   left: 28px;
-  height: 81px;
+  width: 374px;
+  height: 66px;
 }
 .middle-name {
   position: absolute;
-  top: 0;
-  left: 0.8px;
+  top: -36px;
+  left: -67px;
   font-weight: 600;
+  font-size: 19px;
   display: inline-block;
-  width: 113px;
+  width: 163px;
 }
-input {
+.middleName input{
   position: absolute;
   top: 29px;
-  left: 0;
+  left: 0px;
   border-radius: var(--br-xs);
   background-color: var(--color-white);
-  column-gap: 4px;
-  width: 98%;
-  height: 52px;
+  width: 187px;
+  height: 36px;
 }
 .middlenameframe {
   position: absolute;
   top: 138px;
-  left: 809px;
-  width: 269px;
-  height: 81px;
+  left: 633px;
+  width: 187px;
+  height: 65px;
 }
 .first-name {
   position: absolute;
-  top: 0;
-  left: 1.2px;
+  top: -36px;
+  left: -69.8px;
+  font-size: 19px;
   font-weight: 600;
   display: inline-block;
   width: 167.7px;
 }
-input{
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
+.fristName input{
+  position: absolute;
   top: 29px;
-  left: 0;
-  font-size: 25px;
-  outline: none;
-  column-gap: 4px;
+  left: 0px;
+  border-radius: var(--br-xs);
   background-color: var(--color-white);
-  width: 98%;
-  height: 52px;
+  width: 317px;
+  height: 36px;
 }
 .firstnameframe {
   position: absolute;
   top: 138px;
-  left: 406px;
-  width: 399px;
-  height: 81px;
+  left: 328px;
+  width: 317px;
+  height: 65px;
 }
 .last-name {
   position: absolute;
-  top: 0;
-  left: 1.1px;
+  top: -36px;
+  left: -63.9px;
+  font-size: 19px;
   font-weight: 600;
   display: inline-block;
-  width: 140.7px;
+  width: 130.7px;
+}
+.lastName input{
+  position: absolute;
+  top: 29px;
+  left: 0px;
+  border-radius: var(--br-xs);
+  background-color: var(--color-white);
+  width: 289px;
+  height: 36px;
 }
 .lastnameframe {
   position: absolute;
   top: 138px;
   left: 28px;
-  width: 374px;
-  height: 81px;
-}
-.already-have-an,
-.backbtn1,
-.redirect-log-in {
-  position: absolute;
-  font-size: var(--font-size-xl);
+  width: 289px;
+  height: 65px;
 }
 .already-have-an {
-  top: 704px;
-  left: 358px;
+  position: absolute;
+  top: 356px;
+  left: 364px;
   font-weight: 600;
+  font-size: 15px;
   text-align: right;
 }
-.backbtn1,
 .redirect-log-in {
-  cursor: pointer;
-}
-.redirect-log-in {
-  top: 704px;
-  left: 616px;
+  position: absolute;
+  top: 357px;
+  left: 566px;
   font-weight: 600;
+  font-size: 15px;
   color: var(--color-chocolate-200);
   text-align: right;
+  cursor: pointer;
 }
 .backbtn1 {
-  top: 731px;
-  left: 511px;
+  position: absolute;
+  top: 377px;
+  left: 479px;
   font-weight: 800;
+  font-size: 15px;
   color: var(--color-chocolate-100);
+  cursor: pointer;
+}
+.log-in5 {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  width: 331px;
+  flex-shrink: 0;
+  left: 20px
+}
+.logslidersbtn1 {
+  position: absolute;
+  top: 26px;
+  left: 165px;
+  border-radius: var(--br-7xl);
+  background: linear-gradient(
+    180deg,
+    #e5ddd9,
+    rgba(229, 221, 217, 0.64) 99.99%,
+    rgba(229, 221, 217, 0)
+  );
+  width: 668px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-9xs) var(--padding-195xl);
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: right;
+  font-size: var(--font-size-5xl);
+}
+.regslidersbtn1 {
+  position: absolute;
+  top: 26px;
+  left: 165px;
+  border-radius: var(--br-7xl);
+  background-color: var(--color-dimgray-200);
+  opacity: 0.6;
+  width: 307px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-9xs) var(--padding-159xl);
+  box-sizing: border-box;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
 }
 .registerareacustomer {
   position: absolute;
-  top: 88px;
-  left: 162px;
-  width: 1117px;
-  height: 771px;
+  top: 184px;
+  left: 209px;
+  width: 1006px;
+  height: 557px;
+  font-size: var(--font-size-xl);
 }
 .registercustomer {
   position: relative;
@@ -766,122 +858,4 @@ input{
   font-size: var(--font-size-5xl);
   color: var(--color-black);
   font-family: var(--font-inter);
-}
-.regsuccess-child {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: var(--br-56xl);
-  background-color: var(--color-lightgray-100);
-}
-.successfully-registered {
-  position: absolute;
-  height: 29.52%;
-  width: 63.66%;
-  top: 21.43%;
-  left: 22.85%;
-  font-weight: 800;
-  display: inline-block; 
-}
-.icon3,
-.tick-icon-30-11 {
-  position: absolute;
-  height: 100%;
-  width: 79.15%;
-  top: 0;
-  right: 20.85%;
-  bottom: 0;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-}
-.tick-icon-30-11 {
-  height: 64.34%;
-  width: 55.07%;
-  top: 33.4%;
-  right: 0;
-  bottom: 2.26%;
-  left: 44.93%;
-}
-.icon2 {
-  position: absolute;
-  height: 63.1%;
-  width: 18.31%;
-  top: 16.67%;
-  right: 69.62%;
-  bottom: 20.24%;
-  left: 12.07%;
-}
-.continuebtn-item {
-  position: absolute;
-  height: 100%;
-  width: 94.64%;
-  top: 0;
-  right: 5.36%;
-  bottom: 0;
-  left: 0;
-  border-radius: var(--br-12xl-5);
-  background-color: var(--color-dimgray-200);
-}
-.continue1 {
-  position: absolute;
-  height: 69.57%;
-  width: 100%;
-  top: 13.04%;
-  left: 0;
-  font-weight: 800;
-  display: inline-block;
-}
-.continuebtn1 {
-  position: absolute;
-  height: 27.38%;
-  width: 31.61%;
-  top: 51.19%;
-  right: 32.9%;
-  bottom: 21.43%;
-  left: 35.48%;
-  cursor: pointer;
-  color: var(--color-lightgray-100);
-}
-.regsuccess{
-  width: 355px;
-  background: whitesmoke;
-  border-radius: 45px;
-  position: absolute;
-  top: 355px;
-  left: 675px;
-  transform: translate(-50%, -50%) scale(0.1);
-  text-align: center;
-  padding: 0 20px 20px;
-  color: black;
-  visibility: hidden;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.5s, top 0.5s;
-}
-.open-regsuccess{
-  visibility: visible;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1);
-}
-.regsuccess button{
-  width: 50%;
-  position: absolute;
-  top: 145px;
-  left: 95px;
-  margin-top: 50px;
-  padding: 5px 0;
-  background: gray;
-  color: #fff;
-  border: 0;
-  outline: none;
-  font-size: 18px;
-  border-radius: 4px;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }

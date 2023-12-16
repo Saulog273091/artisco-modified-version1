@@ -73,12 +73,12 @@
           src="./public/GCash_Horizontal-Full-Blue-Transparent.png"
         />
       </div>
-      <div class="paypal2" id="paypalContainer">
+      <!-- <div class="paypal2" id="paypalContainer">
         <div class="gcash3"></div>
         <img class="paypal-1-icon1" alt="" src="./public/PayPal.svg.png" />
 
         <i class="pay-with-paypal1">Pay with PayPal</i>
-      </div>
+      </div> -->
       <div class="cash2">
         <div class="gcash3"></div>
         <i class="pay-in-cash1">Pay in Cash</i>

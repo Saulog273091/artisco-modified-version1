@@ -1,8 +1,9 @@
 <?php
-session_start();
+// session_start();
 include("connect.php");
+include("./functions/common_function.php");
 
-if(!isset($_SESSION['emailAdd']) && !isset($_SESSION['passWord'])){
+if(!isset($_SESSION['emailAdd']) && !isset($_SESSION['passWord']) && is_null($_SESSION['storeName'])){
     header("location:LogIn.php");
     die();
 }
@@ -57,28 +58,40 @@ if(!isset($_SESSION['emailAdd']) && !isset($_SESSION['passWord'])){
           <!-- fetching products -->
           <?php 
           
-          $select_query = "SELECT * FROM `products` where  '$_SESSION[emailAdd]' = emailAdd ";
-          $result_query = mysqli_query($conn, $select_query); 
-          //$row = mysqli_fetch_assoc($result_query);
-          //echo $row['productName'];
-          while($row = mysqli_fetch_assoc($result_query)) {
-            $prod_Id = $row["productId"];
-            $product_id = $row['productName'];
-            $product_price = $row['price'];
-            $product_Image = $row['productImage'];
-            echo "<div class='col-md-4 mb-4'>
-            <div class='card'>
-  <img src='./products/$product_Image' class='card-img-top' alt='$product_id'>
-  <div class='card-body'>
-    <h5 class='card-title'>$product_id</h5>
-    <p class='card-text'>Price: ₱$product_price</p>
-    <a href='Sample.php?add_to_cart=$prod_Id' class='btn btn-info'>Add to Cart</a>
-    <a href='#' class='btn btn-secondary'>View More</a>
-  </div>
-</div>
+            if(!isset($_GET['remove'])){
+            $select_query = "SELECT * FROM `products` where  '$_SESSION[emailAdd]' = emailAdd ";
+            $result_query = mysqli_query($conn, $select_query); 
+            while($row = mysqli_fetch_assoc($result_query)) {
+                $prod_Id = $row["productId"];
+                $product_id = $row['productName'];
+                $product_price = $row['price'];
+                $product_Image = $row['productImage'];
+                $category = $row['category'];
+                $prod_description= $row['Product_Description'];
+                $prod_type= $row['Product_Type'];
+                $daystocreate= $row['Days_To_Create'];
 
-            </div>";
+                echo "<div class='col-md-3 mb-3'>
+                          <div class='card'>
+                            <img src='./products/$product_Image' class='card-img-top ' alt='$product_id'>
+                            <div class='card-body'>
+                              <h3 class='card-title'>$product_id</h3>
+                              <h5 class='card-title'>$prod_description</h5>
+                              <h5 class='card-title'>$prod_type</h5>
+                              <h5 class='card-title'>$daystocreate</h5>
+                              <h6 class='card-title' style='color: green;'>$category</h6>
+                              <h5 class='card-title'>Price: ₱$product_price</h5>
+                              
+                              <a href='SellerLandingPage.php?remove=$prod_Id' class='btn btn-danger' >Remove</a>
+                            
+                            </div>
+                          </div>
+                      </div>";
+              }
+              
           }
+        
+          
           ?> 
         </div>
       </div>

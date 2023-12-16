@@ -80,6 +80,8 @@ include("functions/common_function.php");
             <tbody>
               <!--php code to display dynamic data-->
               <?php 
+                
+              // session_start();
                 global $conn;
                 $get_ip_add = getIPAddress();
                 $total_price = 0;
@@ -166,7 +168,7 @@ include("functions/common_function.php");
             if($result_count>0){
                 echo"<h4 class='px-3'>Subtotal:<strong>₱ $total_price </strong></h4>
                 <a href='CustomerLandingPage.php' class='btn px-3 border-0 m-3'>Continue Shopping</a>
-                <a href='PaypalFrame.php' class='btn px-3 border-0 m-3'>Checkout</a>
+                <a href='Checkout.php' class='btn px-3 border-0 m-3'>Checkout</a>
                 <!--<button class='px-3 border-0 mx-5'>Remove</button> -->
                 <input type='submit' value='Remove from cart' class='btn px-3 border-0 mx-3' name='remove_cart'>";
             }else{

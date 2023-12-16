@@ -1,3 +1,38 @@
+<?php
+
+session_start();
+include("connect.php");
+
+if(isset($_GET['order_id'])) {
+  $order_id = $_GET['order_id'];
+  $select_data = "SELECT * FROM `orders` WHERE order_id=$order_id";
+  $result = mysqli_query($conn,$select_data);  
+  $row_fetch = mysqli_fetch_array($result);
+  $invoice_number= $row_fetch["invoiceNum"];
+  $amount_due= $row_fetch["amountDue"];
+
+}
+
+if(isset($_POST['confirm_payment'])) {
+  $email = $_SESSION['emailAdd'];
+  $invoice_number = $_POST['invoice_number'];
+  $amount = $_POST['amount'];
+  $payment = $_POST['payment_mode'];
+  $insert_query="INSERT INTO `payments` (order_id,invoiceNum,amount,payment_mode,orderBy) 
+  values ($order_id,$invoice_number,$amount,'$payment','$email')";
+  $result = mysqli_query($conn,$insert_query);
+  if($result){
+    echo "<script>alert('Payment Successful!')</script>";
+    echo "<script>window.open('AccountFrame.php?my_orders','_self')</script>";
+  }
+  $update_orders = "UPDATE `orders` SET orderStatus ='Complete'
+   WHERE order_id = $order_id";
+   $result_orders = mysqli_query($conn,$update_orders);
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -28,6 +63,7 @@
     />
   </head>
   <body>
+   
     <div class="paymentframe">
       <div class="lowerarea5">
         <div class="lowerframe5"></div>
@@ -50,7 +86,34 @@
       <div class="artistico24" id="artisticoContainer1">
         <div class="artistico23">Artisti.co</div>
       </div>
-      <div class="payment">Payment</div>
+      <!-- <div class="payment">Payment</div> -->
+
+
+      <div class="billing-info1" style="position:absolute; left: 500px; top: 200px; border-style: double; border-radius: 20px; border-width:5px; height:30%;";>
+            <h1 style="margin: 50px;">Confirm Payment</h1>
+                <div class="container">
+                  <form action="" method="post">
+                  <div class="form-outline my-4 text center">
+                  <h5 style="position: relative; left: 160px;">Invoice Number:</h5>
+                  <input type="text" style="position:relative; left: 70px; border-radius:10px; width:70%; height: 30px; top: -20px;"
+                  name = "invoice_number" value="<?php echo $invoice_number ?>">
+                  <h5 style="position: relative; left: 200px; top: -30px;">Amount:</h5>
+                  <input type="text" style="position:relative; left: 70px; border-radius:10px; width:70%; height: 30px; top: -50px; " 
+                  name = "amount" value="<?php echo $amount_due?>">
+                 
+                  <select  name="payment_mode" style="position: relative; width:50%;  left: 120px; top: -20px;">
+                    <option>Select payment</option>
+                    <option>Cash on Delivery</option>
+                    <option>GCash</option>
+                  </select>
+                  <input type="submit" style="position:relative; top:50px;  left: 130px; width:50%; height: 50px; border-radius:20px; border-width:5px; background-color:green; color:white;" 
+                  value="Confirm" name="confirm_payment">
+                </form>
+                </div>
+          </div>
+
+          
+      <!-- </div>
       <i class="choose-payment-method">Choose payment method below</i>
       <div class="billing-info">
         <div class="billing-info1">Billing Info</div>
@@ -82,7 +145,7 @@
           src="./public/dollar-money-cash-icon-14.png"
         />
       </div>
-    </div>
+    </div> -->
 
     <script>
       var accountIcon = document.getElementById("accountIcon");

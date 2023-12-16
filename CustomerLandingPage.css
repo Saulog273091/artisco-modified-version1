@@ -287,7 +287,6 @@
 .see-more-container3 {
   position: absolute;
   top: 5%;
-  
 }
 .digitalbtn1 {
   position: absolute;
@@ -545,13 +544,14 @@
   width: 10px;
 }
 .customerlandingpage {
-  display: absolute;
+  position: fixed;
   width: 100%;
   text-align: left;
   font-size: var(--font-size-13xl);
   color: var(--color-black);
   font-family: var(--font-inter);
   background-color: var(--color-white);
+  
 }
 .help-support {
   position: absolute;
@@ -610,14 +610,29 @@
   position: relative;
   width: 100%;
   top: 10%;
-  left: 5%;
+  right: 5%;
   height: 200px;
   object-fit: contain;
 }
 .profilelogo{
   margin-left: 900%;
   height: 60%;
-  width: 60%;
-  
-  
+  width: 60%;  
+} 
+
+.addbtn {
+  position: absolute;
+  text-decoration: none;
+  color:black;
+  border: 2px solid darkgrey;
+  border-radius: 20px;
+  padding: 5px;
+  width: 3.5cm;
+  cursor: pointer;
+  background-color:gainsboro;
+  font-family: --font-inter;
+  text-transform:uppercase;
+  top: 40%;
+  left: 10%;
+  transition: 0.4s;
 }

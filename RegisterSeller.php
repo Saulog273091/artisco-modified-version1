@@ -115,7 +115,9 @@
     />
   </head>
   <body>
+  <!--REGISTER SELLER-->
     <div class="registerseller">
+  <!--LOWER FRAME-->
       <div class="lowerframe3">
         <div class="lowerarea3">
           <div class="rectangle-div"></div>
@@ -132,6 +134,7 @@
         <div class="privacy-policy3">Privacy Policy</div>
         <div class="terms-conditions3">Terms & Conditions</div>
       </div>
+  <!--MIDDLE FRAME-->
       <div class="middleframe3" data-scroll-to="middleFrameContainer">
         <div class="middleframe-child1"></div>
         <img class="image4-icon3" alt="" src="./public/image4@2x.png" />
@@ -144,6 +147,7 @@
         <div class="labelabout3">About</div>
         <div class="indicator3">|</div>
       </div>
+  <!--UPPER FRAME-->
       <div class="upperframe3">
         <img class="image1-icon3" alt="" src="./public/image1@2x.png" />
 
@@ -170,6 +174,7 @@
           <div class="about11">Log In</div>
         </div>
       </div>
+  <!--SCULPTURE-->
       <div class="sculptureframe3">
         <div class="sculpturebtn3">
           <div class="see-more-container9">
@@ -180,6 +185,7 @@
         <div class="sculpture3">Sculpture</div>
         <img class="image6-icon3" alt="" src="./public/image6@2x.png" />
       </div>
+  <!--DIGITAL-->
       <div class="digitalframe3">
         <div class="digitalbtn3">
           <div class="see-more-container9">
@@ -190,6 +196,7 @@
         <div class="digital-art3">Digital Art</div>
         <img class="image7-icon3" alt="" src="./public/image7@2x.png" />
       </div>
+  <!--PAINTING-->
       <div class="paintingframe3">
         <img class="image8-icon3" alt="" src="./public/image8@2x.png" />
 
@@ -204,64 +211,66 @@
 
       <form action="RegisterSeller.php" method="POST" enctype="multipart/form-data">
 
-      <div
-        class="registerareaseller"
-        data-scroll-to="registerAreaSellerContainer"
-      >
+      <div class="registerareaseller" data-scroll-to="registerAreaSellerContainer">
+  <!--REGISTRATION-->
         <div class="loginregisterframe2"></div>
+  <!--LOGIN SLIDER-->
         <div class="logslidersbtn2" id="logSlidersbtnContainer">
           <div class="log-in10">Log In</div>
         </div>
+  <!--REGISTER SLIDER-->
         <div class="regslidersbtn2">
           <div class="register10">Register</div>
         </div>
+  <!--REGISTER BUTTON-->
         <div class="regsell" id="regsellContainer">
           <button type="reg" name="save">Register</button>
         </div>
+  <!--CUSTOMER SLIDER-->
         <div class="customerslider1" id="customerSliderContainer">
           <div class="customer1">Customer</div>
         </div>
+  <!--SELLER SLIDER-->
         <div class="sellerslider1">
           <div class="seller1">Seller</div>
         </div>
+  <!--CONFIRM PASSWORD-->
         <div class="confirmpass1">
           <input type="password" placeholder="" id="myInput" required name="cpassWord"><br>
           <div class="confirm-password1">Confirm Password</div>
           <div class="confirmpass2"></div>
         </div>
+  <!--CREATE PASSWORD-->
         <div class="createpass1">
           <input type="password" placeholder="" value="" id="myInput" required name="passWord"><br>
           <div class="store-name">Create Password</div>
           <div class="storenameinput"></div>
         </div>
-        <div class="verificationbtn">
-          <div class="uploadinput"></div>
-          <button type="button" class="btn-warning">Upload Verification
-          <i class='fa fa-upload'></i>
-          <input type="file" name="image" data-parsley-trigger="keyup" accept=".jpg, .jpeg, .png">
-        </button>
-          <img src="" alt="">
-        </div>
+  <!--STORE NAME-->
         <div class="storenameframe">
           <input type="text" placeholder=" " required name="storeName">
           <div class="store-name">Store Name</div>
           <div class="storenameinput"></div>
         </div>
+  <!--ADDRESS-->
         <div class="addressframe1">
           <input type="text" placeholder=" " required name="address">
           <div class="address1">Address</div>
           <div class="addressinput1"></div>
         </div>
+  <!--EMAIL ADDRESS-->
         <div class="emailaddressframe1">
           <input type="text" placeholder=" " required name="emailAdd">
           <div class="email-address1">Email Address</div>
           <div class="emailaddinput1"></div>
         </div>
+  <!--CONTACT NUMBER-->
         <div class="contactnumframe1">
           <input type="text" placeholder=" " required name="contactNum">
           <div class="contact-number1">Contact Number</div>
           <div class="contactinput1"></div>
         </div>
+  <!--GENDER-->
         <div class="genderframe1">
           
             <label>
@@ -276,32 +285,39 @@
           <div class="gender1">Gender</div>
           <div class="genderinput1"></div>
         </div>
+  <!--BIRTHDATE-->
         <div class="birthdateframe">
           <input type="date" placeholder=" " required name="birthDate">
           <div class="birth-date">Birth Date</div>
           <div class="birthinput1"></div>
         </div>
+  <!--MIDDLE NAME-->
         <div class="middlenameframe1">
           <input type="text" placeholder=" " required name="middleName">
           <div class="middle-name1">MiddleName</div>
           <div class="midnameinput1"></div>
         </div>
+  <!--FIRST NAME-->
         <div class="firstnameframe1">
           <input type="text" placeholder=" " required name="firstName">
           <div class="first-name1">FirstName</div>
           <div class="firstnameinput1"></div>
         </div>
+  <!--LAST NAME-->
         <div class="lastnameframe1">
           <input type="text" placeholder=" " required name="lastName">
           <div class="last-name1">LastName</div>
           <div class="lastnameinput1"></div>
         </div>
+  <!--REDIRECT-->
         <div class="redirect-log-in1" id="redirectLogIn">Log In</div>
+  <!--ALREADY HAVE ACCOUNT-->
         <div class="already-have-an1">Already have an account?</div>
+  <!--BACK BUTTON-->
         <div class="backbtn2" id="backbtnText">back</div>
       </div>
     </div>
-
+  <!--MESSAGE-->
     <div id="regSuccessContainer" class="popup-overlay" style="display: none">
       <div class="regsuccess">
         <div class="regsuccess-child"></div>

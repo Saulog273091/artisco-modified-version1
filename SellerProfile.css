@@ -1,6 +1,27 @@
+.select2{
+    position: relative;
+    top: 320px;
+    left: 425px;
+}
+
+.select1{
+    position: relative;
+    top: 320px;
+    left: 400px;
+}
+
+select {
+    width: 20%;
+    position: absolute;
+    right: 10px;
+    top: 350px;
+}
+
+
 .addproduct {
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
+    right: 45%;
     border-radius: 50px;
     padding: 5px;
 }
@@ -13,7 +34,6 @@
 
 input[type="radio"]{
     display:none;
-
 }
 
 label{
@@ -24,10 +44,11 @@ label{
     padding: 5px 50px;
     display: flex;
     align-items: center;
+    right: 30px;
 }
 
 input[type="radio"]:checked + label{
-    background-color: lightskyblue;
+    background-color: gray;
     color: white;
 }
 .input {
@@ -47,22 +68,67 @@ input[type="radio"]:checked + label{
 }
 
 .product-image {
-    top: 70%;
-    left: 50%;
+    top: 59%;
+    left: 45%;
     transform: translate(-50%, -50%);
     position: absolute;
 }
 
+.product-name {
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    text-transform:uppercase;
+}
+
+.price {
+    position: relative;
+    top: 105px;
+    left: 40px;
+    text-transform:uppercase;
+}
+
+input{
+    margin: auto;
+    display: block;
+    width: 40%;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    position: relative;
+    top: 115px;
+    left: 40px;
+}
+
+.textarea {
+    position: relative;
+    top: 115px;
+    left: 40px;
+    width: 40%;
+    height: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
 
 .product-details {
     font-family: --font-inter;
     font-size:25px;
     text-transform:uppercase;
+    position: absolute;
+    left: 280px;
+}
+
+.description {
+    position: relative;
+    top: 105px;
+    left: 40px;
+    text-transform: uppercase;
 }
 
 .popup-content {
-    height: 300px;
-    width: 500px;
+    height: 600px;
+    width: 800px;
     background: white;
     padding: 20px;
     border-radius: 15px;
